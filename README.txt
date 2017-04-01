@@ -64,7 +64,36 @@ Equations:
 
 CLASSES
 	- particle
+	    Attributes:
+	        - local_max = highest point seen by this particle
+	        - current_position
+	        - current_velocity
+
+	    Methods:
+	        Public
+	        - constructor
+	        - tick-tock: updates position, velocity and height
+	        Private
+	        - update_velocity
+	        - update_position
+	        - get_height
+
 	- simulator - needs configurable number of particles
+	    Attributes:
+	        - global_max = highest position seen by any particle
+	        - top_5 = highest five particles
+	        - particles = list of particles in environment
+
+	    Methods:
+
+	        Public
+	        - run: creates terrain, creates swarm, runs required iterations, reports results,               plots particles;
+
+	        Private
+	        - create_particle
+	        - update_particles: updates the position of each particle using particle's tick-tock            method which return a new particle that is updated.
+	        - report_results: prints to console highest position and top five
+	        - plot_particles: drives Java FX
 	- terrain
 	- main()
 

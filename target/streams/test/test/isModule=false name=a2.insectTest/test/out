@@ -1,2 +1,5 @@
 [0m[[0minfo[0m] [0m[32minsectTest:[0m[0m
-[0m[[0minfo[0m] [0m[32m- SayHelloWorksCorrectly[0m[0m
+[0m[[0minfo[0m] [0m[32m- Can create insect object[0m[0m
+[0m[[0minfo[0m] [0m[32m- velocity changes on update[0m[0m
+[0m[[0minfo[0m] [0m[32m- velocity can't exceed abs|1|[0m[0m
+[0m[[0minfo[0m] [0m[32m- position changes on update[0m[0m
