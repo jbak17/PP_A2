@@ -1,38 +1,44 @@
 package a2
 
-import org.scalatest.FunSuite
+import a2.A2.Velocity
+import org.scalatest._
 
 /**
   * Created by jeva on 31/03/17.
   */
-class insectTest extends FunSuite {
+class insectTest extends FlatSpec {
+  val i1: Insect = Insect((1,1),(1,1))
 
-  test("Can create insect object"){
-    val i = Insect((0,0),(0,0))
-    assert(i.getClass() == classOf[Insect])
+
+  "An Insect " should " be of class insect" in {
+    assert(i1.getClass() == classOf[Insect])
   }
 
-  test("velocity changes on update"){
-    val i = Insect.update_velocity(Insect((0,0),(1,1)))
-    assert(i.velocity != (1,1))
+  "It" should " change velocity on update" in {
+    val i: Velocity = Insect.update_velocity(i1)
+    assert(i != (1,1))
   }
 
-  test("velocity can't exceed abs|1|"){
-    val i = Insect.update_velocity(Insect((0,0),(2,2)))
+  "An Insect's velocity" should "not exceed abs|1|" in {
+    val i: Velocity = Insect.update_velocity(i1)
     def create(number_of_insects: Int): Array[Insect] = {
       ///val swarm = Array[Insect](number_of_insects)
       ???
     }
 
-    assert(i.velocity._1 >= -1 && i.velocity._1 <= 1)
-    assert(i.velocity._2 >= -1 && i.velocity._2 <= 1)
+    assert(i._1 >= -1 && i._1 <= 1)
+    assert(i._2 >= -1 && i._2 <= 1)
   }
 
-  test("position changes on update"){
-    val i = Insect((1,1),(1,1))
-    i.position = Insect.update_position(i.position, i.velocity)
-    assert(i.position != (1,1))
+  "It's position" should "change on update" in {
+    val i2: Insect = i1.copy(position = Insect.update_position(i1))
+    assert(i2.position != (1,1))
+  }
 
+  "A tick" should "create a new item that is different from the previous" in {
+    val i2: Insect = Insect.tick(i1)
+    assert(i1.position != i2.position)
+    assert(i1.velocity != i2.velocity)
   }
 
 }

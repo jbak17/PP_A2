@@ -4,7 +4,7 @@
 		module="assignment_2$sources_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20170331173520"
+		publication="20170401191017"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

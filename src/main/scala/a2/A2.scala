@@ -8,6 +8,7 @@ object A2 extends App{
 
   type Velocity = (Double, Double)
   type Position = (Double, Double)
+  type Swarm = Seq[Insect]
 
   var global_max: Position = (0,0)
 

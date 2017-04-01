@@ -4,7 +4,7 @@
 		module="assignment_2_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20170331173518"
+		publication="20170401190757"
 	>
 		<description>
 		Assignment_2
@@ -34,6 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.1" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.1" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.0.1" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>
