@@ -1,5 +1,7 @@
 package a2
 
+import a2.A2.Swarm
+
 import scala.collection.mutable
 
 
@@ -23,15 +25,20 @@ import scala.collection.mutable
   *- plot_particles: drives Java FX
   */
 case class Simulator(swarm_size: Int, terrain: (Int, Int), interations: Int) {
-  //var global_max: (Double, Double);
+
   //var top_five_positions: mutable.ArrayBuffer[(Double, Double)];
-  //var particles: mutable.ArrayBuffer[Insect];
+  var swarm: Swarm = Simulator.create_swarm(swarm_size)
 
 }
 
 object Simulator{
 
-	def create_swarm(): mutable.ArrayBuffer[Insect] = ???
+  //create the initial swarm
+	def create_swarm(swarm_size: Int): Swarm = {
+    for (x <- 1 to swarm_size)
+
+  }
+
   def run(): Unit = ???
 
 	def create_insect(): Insect = ???

@@ -1,6 +1,6 @@
 package a2
 
-import a2.A2.Velocity
+import a2.A2.{Swarm, Velocity}
 import org.scalatest._
 
 /**
@@ -39,6 +39,12 @@ class insectTest extends FlatSpec {
     val i2: Insect = Insect.tick(i1)
     assert(i1.position != i2.position)
     assert(i1.velocity != i2.velocity)
+  }
+
+  "A swarm" should "be created with n number of elements" in {
+    val mySwarm: Swarm = Simulator.create_swarm(25)
+
+
   }
 
 }
