@@ -1,6 +1,6 @@
 package a2
 
-import a2.A2.Swarm
+import a2.A2.{Position, Swarm, Velocity}
 
 import scala.collection.mutable
 
@@ -27,23 +27,37 @@ import scala.collection.mutable
 case class Simulator(swarm_size: Int, terrain: (Int, Int), interations: Int) {
 
   //var top_five_positions: mutable.ArrayBuffer[(Double, Double)];
-  var swarm: Swarm = Simulator.create_swarm(swarm_size)
+  val swarm: Swarm = Simulator.create_swarm(swarm_size, terrain)
 
 }
 
 object Simulator{
 
-  //create the initial swarm
-	def create_swarm(swarm_size: Int): Swarm = {
-    for (x <- 1 to swarm_size)
+  //========== INITIALISE SWARM ===========
 
+  //create the initial swarm
+	def create_swarm(swarm_size: Int, terrain: (Int, Int)): Swarm = for (x <- 1 to swarm_size) yield create_insect(terrain)
+
+  //an insect needs a position and a velocity
+	def create_insect(terrain: (Int, Int)): Insect = Insect(create_random_position((terrain._1, terrain._2)), create_random_velocity())
+
+  //creates a random position within the bounds of the x,y limits provided
+  def create_random_position(terrain: (Int, Int)): Position = {
+    val r = scala.util.Random
+    //create position at integer distribution on terrain.
+    //nextInt will return between 0 and limit given
+    (r.nextInt(terrain._1), r.nextInt(terrain._1))
   }
+
+  def create_random_velocity(): Velocity = (scala.util.Random.nextFloat(), scala.util.Random.nextFloat() )
+
+
+  //  =========== RUN SIMULATION ========
+
 
   def run(): Unit = ???
 
-	def create_insect(): Insect = ???
-
-	def update_swarm(): Unit = ???
+  def update_swarm(): Unit = ???
 
 	def report_results(): Unit = ???
 

@@ -41,9 +41,9 @@ class insectTest extends FlatSpec {
     assert(i1.velocity != i2.velocity)
   }
 
-  "A swarm" should "be created with n number of elements" in {
-    val mySwarm: Swarm = Simulator.create_swarm(25)
-
+  "A swarm" should "be created with 25 number of elements" in {
+    val mySwarm: Swarm = Simulator.create_swarm(25, (10,10))
+    assertResult(25)(mySwarm.size)
 
   }
 

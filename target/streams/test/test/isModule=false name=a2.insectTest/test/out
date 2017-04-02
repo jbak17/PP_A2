@@ -9,3 +9,5 @@
 [0m[[0minfo[0m] [0m[32m- should change on update[0m[0m
 [0m[[0minfo[0m] [0m[32mA tick[0m[0m
 [0m[[0minfo[0m] [0m[32m- should create a new item that is different from the previous[0m[0m
+[0m[[0minfo[0m] [0m[32mA swarm[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be created with 25 number of elements[0m[0m

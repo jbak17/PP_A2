@@ -12,5 +12,7 @@ object A2 extends App{
 
   var global_max: Position = (0,0)
 
+  val s = Simulator(5, (10,10), 50)
+  for (x <- s.swarm){println(x)}
 
 }
