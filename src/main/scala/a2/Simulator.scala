@@ -23,11 +23,12 @@ import scala.collection.mutable
   *- update_particles: updates the position of each particle using particle's tick-tock            method which return a new particle that is updated.
   *- report_results: prints to console highest position and top five
   *- plot_particles: drives Java FX
+  *- get_telemetry (highest and next five):
   */
-case class Simulator(swarm_size: Int, terrain: (Int, Int), interations: Int) {
+case class Simulator(swarm_size: Int, iterations: Int) {
 
   //var top_five_positions: mutable.ArrayBuffer[(Double, Double)];
-  val swarm: Swarm = Simulator.create_swarm(swarm_size, terrain)
+  var swarm: Swarm = Simulator.create_swarm(swarm_size)
 
 }
 
@@ -36,17 +37,15 @@ object Simulator{
   //========== INITIALISE SWARM ===========
 
   //create the initial swarm
-	def create_swarm(swarm_size: Int, terrain: (Int, Int)): Swarm = for (x <- 1 to swarm_size) yield create_insect(terrain)
+	def create_swarm(swarm_size: Int): Swarm = for (x <- 1 to swarm_size) yield create_insect()
 
   //an insect needs a position and a velocity
-	def create_insect(terrain: (Int, Int)): Insect = Insect(create_random_position((terrain._1, terrain._2)), create_random_velocity())
+	def create_insect(): Insect = Insect(create_random_position(), create_random_velocity())
 
-  //creates a random position within the bounds of the x,y limits provided
-  def create_random_position(terrain: (Int, Int)): Position = {
+  //creates a random position (x,y) within 0.0 and 1.0
+  def create_random_position(): Position = {
     val r = scala.util.Random
-    //create position at integer distribution on terrain.
-    //nextInt will return between 0 and limit given
-    (r.nextInt(terrain._1), r.nextInt(terrain._1))
+    (r.nextFloat(), r.nextFloat())
   }
 
   def create_random_velocity(): Velocity = (scala.util.Random.nextFloat(), scala.util.Random.nextFloat() )
@@ -54,14 +53,37 @@ object Simulator{
 
   //  =========== RUN SIMULATION ========
 
+  //updates the swarm, reports results
+  def run(simulator: Simulator): Unit = {
+    //cycles simulation
+    for (iteration <- 1 to simulator.iterations){
+      simulator.swarm = update_swarm(simulator.swarm)
+      report_results(simulator.swarm)
+    }
 
-  def run(): Unit = ???
+  }
 
-  def update_swarm(): Unit = ???
+  //updates each insect in swarm with new positions, velocities, heights
+  def update_swarm(swarm: Swarm): Swarm = swarm.map(insect => Insect.tick(insect))
 
-	def report_results(): Unit = ???
 
+  //logs results to console
+  //need to log best results seen so far and height
+	def report_results(swarm: Swarm): Unit = {
+    //print maximum position and height
+    println(s"The highest position seen so far is:" + Insect.global_max_value + "\n" + s"The height is: " + Insect.global_max_position)
+
+    //print top five
+    println("Next five highest locations: \n \n")
+    Simulator.get_telemetry(swarm).map(x => println("Height: " + x.height + ", Position: " + x.position))
+  }
+
+  //plots swarm graphically
 	def plot_particles() = ???
 
+  //creates a list of the five highest positions seen so far
+  def get_telemetry(swarm: Swarm): Swarm = swarm.sortBy(_.local_max_height).reverse.dropRight(swarm.size-6).drop(1)
 
+
+  // THE END //
 }

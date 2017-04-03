@@ -7,8 +7,10 @@ import org.scalatest._
   * Created by jeva on 31/03/17.
   */
 class insectTest extends FlatSpec {
-  val i1: Insect = Insect((1,1),(1,1))
 
+  //Helper items to use in tests
+  val i1: Insect = Insect((1,1),(1,1))
+  val mySwarm: Swarm = Simulator.create_swarm(25)
 
   "An Insect " should " be of class insect" in {
     assert(i1.getClass() == classOf[Insect])
@@ -42,9 +44,20 @@ class insectTest extends FlatSpec {
   }
 
   "A swarm" should "be created with 25 number of elements" in {
-    val mySwarm: Swarm = Simulator.create_swarm(25, (10,10))
     assertResult(25)(mySwarm.size)
+  }
 
+  "A swarm" should ",when updated, have insects in different places" in {
+    val newSwarm: Swarm = Simulator.update_swarm(mySwarm)
+    val testBug: Insect = newSwarm(0)
+    val oldBug: Insect = mySwarm(0)
+    assert(testBug.position != oldBug.position)
+    assert(testBug.velocity != testBug.position)
+  }
+
+  "A swarm" should "be reduced to 5 after processing for telemetry" in {
+
+    assertResult(5)(Simulator.get_telemetry(mySwarm).size)
   }
 
 }

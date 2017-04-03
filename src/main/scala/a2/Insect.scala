@@ -14,7 +14,8 @@ import com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl
   **
   *Methods:
   *Public
-  *- tick-tock: updates position, velocity and height
+  *- tick: updates position, velocity and height
+  *
   *Private
   *- update_velocity
   *- update_position
@@ -23,7 +24,8 @@ import com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl
 
 
 case class Insect(position: Position, velocity: Velocity) {
-  var local_max: Position = position
+  var local_max_position: Position = position
+  var local_max_height: Double = Insect.update_height(this)
   var height: Double = Insect.height(position._1, position._2)
 
 }
@@ -33,6 +35,7 @@ object Insect {
   var global_max_position: Position = (0, 0)
   var global_max_value: Double = 0.0
 
+  //creates a new insect based upon an older one with an updated velocity, height and position
   def tick(insect: Insect): Insect = {
 
     val new_insect: Insect = insect.copy(
@@ -41,15 +44,14 @@ object Insect {
 
     new_insect.height = height(new_insect.position._1, new_insect.position._2)
 
-  /*@todo Need to figure out how to update the global/max list
-  if (new_insect.local_max != insect.local_max)
-
-  */
+    if (new_insect.height > insect.local_max_height) {
+      new_insect.local_max_height = new_insect.height
+    }
 
     new_insect
   }
 
-  def update_height(insect: Insect): Double = ???
+  def update_height(insect: Insect): Double = height(insect.position._1, insect.position._2)
 
   def update_velocity(insect: Insect): Velocity = {
   /*
@@ -68,21 +70,31 @@ object Insect {
   }
 
     //calculates current height for use in formulas
-    val current_height: Double = height(insect.position._1, insect.position._2)
-    val x: Double = speed_check((0.5 * insect.velocity._1)+(2*r.nextFloat()*(insect.local_max._1 -  current_height))+(2*r.nextFloat()*(global_max_position._1 - current_height)))
-    val y: Double = speed_check((0.5 * insect.velocity._2)+(2*r.nextFloat()*(insect.local_max._2 - current_height))+(2*r.nextFloat()*(global_max_position._2 - current_height)))
+    val x: Double = speed_check((0.5 * insect.velocity._1)+(2*r.nextFloat()*(insect.local_max_height -  insect.height))+(2*r.nextFloat()*(global_max_position._1 - insect.height)))
+    val y: Double = speed_check((0.5 * insect.velocity._2)+(2*r.nextFloat()*(insect.local_max_height - insect.height))+(2*r.nextFloat()*(global_max_position._2 - insect.height)))
 
    (x,y)
   }
 
 
   def update_position(insect: Insect): Position = {
+    //create new positions
+    var new_pos = List(insect.velocity._1 + insect.position._1, insect.velocity._2 + insect.position._2)
+    //take into account what happens at the edge of the display
+    for (coordinant <- new_pos){
+      if (coordinant < 0.0) 0.0
+      else if (coordinant > 1.0) 1.0
+      else coordinant
+    }
 
-    (insect.velocity._1 + insect.position._1, insect.velocity._2 + insect.position._2)
+    (new_pos(0), new_pos(1))
 
   }
 
 
-  def height(x:Double, y:Double):Double = 1.0
+  def height(x:Double, y:Double):Double = r.nextInt(100)
 
-  }
+
+
+}
+
