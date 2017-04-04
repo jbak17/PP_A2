@@ -54,10 +54,11 @@ class insectTest extends FlatSpec {
     assert(testBug.position != oldBug.position)
     assert(testBug.velocity != testBug.position)
   }
-
+  /*
+  This test was deprecated when get_telemetry became a unit return
   "A swarm" should "be reduced to 5 after processing for telemetry" in {
 
     assertResult(5)(Simulator.get_telemetry(mySwarm).size)
   }
-
+  */
 }

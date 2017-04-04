@@ -13,5 +13,3 @@
 [0m[[0minfo[0m] [0m[32m- should be created with 25 number of elements[0m[0m
 [0m[[0minfo[0m] [0m[32mA swarm[0m[0m
 [0m[[0minfo[0m] [0m[32m- should ,when updated, have insects in different places[0m[0m
-[0m[[0minfo[0m] [0m[32mA swarm[0m[0m
-[0m[[0minfo[0m] [0m[32m- should be reduced to 5 after processing for telemetry[0m[0m

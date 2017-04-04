@@ -34,7 +34,7 @@ case class Simulator(swarm_size: Int, iterations: Int) {
 
 object Simulator{
 
-  val top_positions_seen: Swarm = new mutable.ArrayBuffer(5)
+  var top_positions_seen: Swarm = mutable.Seq()
   //========== INITIALISE SWARM ===========
 
   //create the initial swarm
@@ -60,6 +60,7 @@ object Simulator{
     for (iteration <- 1 to simulator.iterations){
       simulator.swarm = update_swarm(simulator.swarm)
       update_highest_record(simulator.swarm)
+      get_telemetry(simulator.swarm)
       report_results(simulator.swarm)
     }
 
@@ -93,7 +94,7 @@ object Simulator{
 
     //print top five
     println("Next five highest locations: ")
-    Simulator.get_telemetry(swarm).map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position))
+    Simulator.top_positions_seen.map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position))
 
     println("=========================")
     println("=========================")
@@ -103,7 +104,13 @@ object Simulator{
 	def plot_particles() = ???
 
   //creates a list of the five highest positions seen so far
-  def get_telemetry(swarm: Swarm): Swarm = swarm.sortBy(_.local_max_height).reverse.dropRight(swarm.size-6).drop(1)
+  def get_telemetry(swarm: Swarm): Unit = {
+    //get five highest from this iteration
+    val new_five: Swarm = swarm.sortBy(_.local_max_height).reverse.dropRight(swarm.size-6).drop(1)
+
+    Simulator.top_positions_seen = (new_five ++ top_positions_seen).sortBy(_.local_max_height).reverse.take(5)
+
+  }
 
 
   // THE END //

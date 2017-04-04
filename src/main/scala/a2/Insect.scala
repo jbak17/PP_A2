@@ -83,9 +83,12 @@ object Insect {
   def update_position(insect: Insect): Position = {
     //create new positions
     var new_pos = List(insect.velocity._1 + insect.position._1, insect.velocity._2 + insect.position._2)
+    // TODO:  this needs to be updated to reflect reassignment of value
     //take into account what happens at the edge of the display
     for (coordinant <- new_pos){
-      if (coordinant < 0.0) 0.0
+      if (coordinant < 0.0) {
+        coordinant = 0.0
+      }
       else if (coordinant > 1.0) 1.0
       else coordinant
     }
