@@ -34,6 +34,7 @@ case class Simulator(swarm_size: Int, iterations: Int) {
 
 object Simulator{
 
+  val top_positions_seen: Swarm = new mutable.ArrayBuffer(5)
   //========== INITIALISE SWARM ===========
 
   //create the initial swarm
@@ -66,16 +67,23 @@ object Simulator{
   //updates each insect in swarm with new positions, velocities, heights
   def update_swarm(swarm: Swarm): Swarm = swarm.map(insect => Insect.tick(insect))
 
+  //updates the highest positions seen so far
 
   //logs results to console
   //need to log best results seen so far and height
 	def report_results(swarm: Swarm): Unit = {
     //print maximum position and height
-    println(s"The highest position seen so far is:" + Insect.global_max_value + "\n" + s"The height is: " + Insect.global_max_position)
+
+    println(s"The highest position seen so far is:" + Insect.global_max_value + "\n" + s"The location is: " + Insect.global_max_position)
+
+    println("=========================")
 
     //print top five
-    println("Next five highest locations: \n \n")
-    Simulator.get_telemetry(swarm).map(x => println("Height: " + x.height + ", Position: " + x.position))
+    println("Next five highest locations: ")
+    Simulator.get_telemetry(swarm).map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position))
+
+    println("=========================")
+    println("=========================")
   }
 
   //plots swarm graphically

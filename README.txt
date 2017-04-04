@@ -81,13 +81,13 @@ CLASSES
 	- simulator - needs configurable number of particles
 	    Attributes:
 	        - global_max = highest position seen by any particle
-	        - top_5 = highest five particles
-	        - particles = list of particles in environment
+	        - top_5 = highest five positions seen so far
+	        - swarm = list of insects in environment
 
 	    Methods:
 
 	        Public
-	        - run: creates terrain, creates swarm, runs required iterations, reports results,               plots particles;
+	        - run: creates swarm, runs required iterations, reports results, plots particles;
 
 	        Private
 	        - create_particle
@@ -96,6 +96,11 @@ CLASSES
 	        - plot_particles: drives Java FX
 	- terrain
 	- main()
+
+
+Clarifications required:
+    What happens when a particle reaches the edge of the terrain?
+    What is the size of the terrain - is this variable?
 
     
           

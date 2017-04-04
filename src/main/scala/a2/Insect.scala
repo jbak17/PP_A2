@@ -42,9 +42,14 @@ object Insect {
       position = update_position(insect),
       velocity = update_velocity(insect))
 
+    //update height based on new position
     new_insect.height = height(new_insect.position._1, new_insect.position._2)
 
-    if (new_insect.height > insect.local_max_height) {
+    //update local and global maximum if necessary
+    if (new_insect.height > Insect.global_max_value) {
+      global_max_value = new_insect.height
+    }
+    else if (new_insect.height > insect.local_max_height) {
       new_insect.local_max_height = new_insect.height
     }
 
