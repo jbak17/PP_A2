@@ -20,7 +20,7 @@
 [0m[[0mdebug[0m] [0m[naha] Getting sources that directly depend on (external) a2.Insect$.[0m
 [0m[[0mdebug[0m] [0m[naha] None of the modified names appears in /home/jeva/Dropbox/Paradigms/Assignment_2/src/test/scala/a2/insectTest.scala. This dependency is not being considered for invalidation.[0m
 [0m[[0mdebug[0m] [0m[naha] The a2.Simulator$ source file has the following regular definitions changed:[0m
-[0m[[0mdebug[0m] [0m[naha] 	report_results.[0m
+[0m[[0mdebug[0m] [0m[naha] 	top_positions_seen, update_highest_record, report_results.[0m
 [0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0m[naha] Files invalidated by inheriting from (external) a2.Simulator$: Set(); now invalidating by inheritance (internally).[0m
 [0m[[0mdebug[0m] [0m[naha] Getting direct dependencies of all sources transitively invalidated by inheritance.[0m
@@ -32,7 +32,7 @@
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(a2.A2$,ModifiedNames(regularNames = global_max, implicitNames = )), NamesChange(a2.Insect,ModifiedNames(regularNames = local_max, local_max_height, local_max_position, implicitNames = )), NamesChange(a2.Insect$,ModifiedNames(regularNames = local_max, local_max_height, local_max_position, implicitNames = )), NamesChange(a2.Simulator$,ModifiedNames(regularNames = report_results, implicitNames = )))[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set(NamesChange(a2.A2$,ModifiedNames(regularNames = global_max, implicitNames = )), NamesChange(a2.Insect,ModifiedNames(regularNames = local_max, local_max_height, local_max_position, implicitNames = )), NamesChange(a2.Insect$,ModifiedNames(regularNames = local_max, local_max_height, local_max_position, implicitNames = )), NamesChange(a2.Simulator$,ModifiedNames(regularNames = top_positions_seen, update_highest_record, report_results, implicitNames = )))[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m

@@ -59,6 +59,7 @@ object Simulator{
     //cycles simulation
     for (iteration <- 1 to simulator.iterations){
       simulator.swarm = update_swarm(simulator.swarm)
+      update_highest_record(simulator.swarm)
       report_results(simulator.swarm)
     }
 
@@ -67,7 +68,19 @@ object Simulator{
   //updates each insect in swarm with new positions, velocities, heights
   def update_swarm(swarm: Swarm): Swarm = swarm.map(insect => Insect.tick(insect))
 
-  //updates the highest positions seen so far
+  //updates the highest position seen so far
+  def update_highest_record(swarm: Swarm): Unit = {
+
+    swarm.map(x => update_max(x))
+
+    //update local and global maximum if necessary
+    def update_max(insect: Insect) = {
+        if (insect.local_max_height > Insect.global_max_value) {
+          Insect.global_max_value = insect.local_max_height
+          Insect.global_max_position = insect.local_max_position
+        }
+    }
+  }
 
   //logs results to console
   //need to log best results seen so far and height

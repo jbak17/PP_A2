@@ -45,12 +45,10 @@ object Insect {
     //update height based on new position
     new_insect.height = height(new_insect.position._1, new_insect.position._2)
 
-    //update local and global maximum if necessary
-    if (new_insect.height > Insect.global_max_value) {
-      global_max_value = new_insect.height
-    }
-    else if (new_insect.height > insect.local_max_height) {
+    //update local maximums if necessary
+    if (new_insect.height > new_insect.local_max_height) {
       new_insect.local_max_height = new_insect.height
+      new_insect.local_max_position = new_insect.position
     }
 
     new_insect
@@ -67,11 +65,11 @@ object Insect {
 
     //velocity clamp: checks that velocity does not become too large.
     def speed_check(velocity: Double, min: Double = -1.0, max: Double = 1.0): Double = {
-    if (velocity < min)
-      {min}
-    else if (velocity > max)
-      {max}
-    else velocity
+      if (velocity < min)
+        {min}
+      else if (velocity > max)
+        {max}
+      else velocity
   }
 
     //calculates current height for use in formulas
