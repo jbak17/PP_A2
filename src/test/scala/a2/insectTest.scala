@@ -9,7 +9,7 @@ import org.scalatest._
 class insectTest extends FlatSpec {
 
   //Helper items to use in tests
-  val i1: Insect = Insect((1,1),(1,1))
+  val i1: Insect = Insect((0.5,0.5),(0.5,-0.5))
   val mySwarm: Swarm = Simulator.create_swarm(25)
 
   "An Insect " should " be of class insect" in {

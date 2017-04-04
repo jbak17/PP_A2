@@ -1,5 +1,5 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(a2.insectTest, org.scalatest.tools.Framework$$anon$1@64b6751, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 318 milliseconds.[0m[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(a2.insectTest, org.scalatest.tools.Framework$$anon$1@18778af0, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 335 milliseconds.[0m[0m
 [0m[[0minfo[0m] [0m[36mTotal number of tests run: 7[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0minfo[0m] [0m[36mTests: succeeded 7, failed 0, canceled 0, ignored 0, pending 0[0m[0m

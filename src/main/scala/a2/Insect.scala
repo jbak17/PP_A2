@@ -1,7 +1,10 @@
 package a2
 
 import a2.A2.{Position, Velocity}
+import com.sun.xml.internal.bind.v2.runtime.Coordinator
 import com.sun.xml.internal.messaging.saaj.soap.impl.HeaderImpl
+
+import scala.collection.mutable.ArrayBuffer
 
 /**
   * Created by jeva on 31/03/17.
@@ -82,16 +85,19 @@ object Insect {
 
   def update_position(insect: Insect): Position = {
     //create new positions
-    var new_pos = List(insect.velocity._1 + insect.position._1, insect.velocity._2 + insect.position._2)
-    // TODO:  this needs to be updated to reflect reassignment of value
+    val x_cord = insect.velocity._1 + insect.position._1
+    val y_cord = insect.velocity._2 + insect.position._2
+
+
     //take into account what happens at the edge of the display
-    for (coordinant <- new_pos){
-      if (coordinant < 0.0) {
-        coordinant = 0.0
-      }
+    def terrain_limit(coordinant: Double): Double = {
+      if (coordinant < 0.0) 0.0
       else if (coordinant > 1.0) 1.0
       else coordinant
     }
+
+    val new_pos = Seq(x_cord, y_cord).map(x => terrain_limit(x))
+
 
     (new_pos(0), new_pos(1))
 
