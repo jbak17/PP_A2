@@ -63,7 +63,6 @@ object Simulator{
       get_telemetry(simulator.swarm)
       report_results(simulator.swarm)
     }
-
   }
 
   //updates each insect in swarm with new positions, velocities, heights

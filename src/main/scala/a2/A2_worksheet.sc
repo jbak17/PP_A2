@@ -1,12 +1,5 @@
 0
+import scala.math
 
-val one: Int = 0;
-var local = Tuple2(Double, Double)
-
-
-class Insect {
-  var local_max = Tuple2(Int, Int)
-  var current_position = Tuple2(Int, Int)
-  var current_velocity = Tuple2(Int, Int)
-}
-
+def height(x:Double, y:Double):Double =
+  math.sin(10*math.Pi*x) * math.sin(10*math.Pi*y) - 10*(math.pow(x-0.5, 2) + math.pow(y-0.5, 2))

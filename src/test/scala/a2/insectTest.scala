@@ -54,6 +54,10 @@ class insectTest extends FlatSpec {
     assert(testBug.position != oldBug.position)
     assert(testBug.velocity != testBug.position)
   }
+
+  "A double" should "be returned from the height function" in {
+    assert(Insect.height(.9, 1.0).getClass() == classOf[Double])
+  }
   /*
   This test was deprecated when get_telemetry became a unit return
   "A swarm" should "be reduced to 5 after processing for telemetry" in {

@@ -13,3 +13,5 @@
 [0m[[0minfo[0m] [0m[32m- should be created with 25 number of elements[0m[0m
 [0m[[0minfo[0m] [0m[32mA swarm[0m[0m
 [0m[[0minfo[0m] [0m[32m- should ,when updated, have insects in different places[0m[0m
+[0m[[0minfo[0m] [0m[32mA double[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be returned from the height function[0m[0m

@@ -48,7 +48,7 @@ Please note, you will be given a little JavaFX UI code to draw the squares. You 
 
 PROVIDED BY ASSESSOR: 
 
-Method for height: def height(x:Double, y:Double):Double = ???
+Method for height: def height(x:Double, y:Double):Double = sin(10πx)sin(10πy)−10((x−0.5)^2 +(y−0.5)^2)
 
 GUI
 
