@@ -58,6 +58,28 @@ class insectTest extends FlatSpec {
   "A double" should "be returned from the height function" in {
     assert(Insect.height(.9, 1.0).getClass() == classOf[Double])
   }
+
+  //Test that the global positions are being updated
+  "A height" should "be added to the highest position seen after one iteration" in {
+    val newSwarm: Swarm = Simulator.update_swarm(mySwarm)
+    assert(Insect.global_max_value != 0.0)
+  }
+
+  "A insect" should "not change direction if it's velocity is within maximal bounds" in {
+
+    val i1: Insect = Insect((0.5,0.5),(0.5,-0.5))
+    assert(Insect.invert_direction(i1).velocity == i1.velocity)
+
+  }
+
+  "A insect" should "change direction if it has reached the border" in {
+
+    val i1: Insect = Insect((2,2),(0.5,-0.5))
+    assert(Insect.invert_direction(i1).velocity != i1.velocity)
+
+  }
+
+
   /*
   This test was deprecated when get_telemetry became a unit return
   "A swarm" should "be reduced to 5 after processing for telemetry" in {

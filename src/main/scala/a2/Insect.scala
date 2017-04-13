@@ -31,12 +31,18 @@ case class Insect(position: Position, velocity: Velocity) {
   var local_max_height: Double = Insect.update_height(this)
   var height: Double = Insect.height(position._1, position._2)
 
+
+
 }
 
 object Insect {
   val r = scala.util.Random
   var global_max_position: Position = (0, 0)
-  var global_max_value: Double = 0.0
+  var global_max_value: Double = -100.0
+
+  //position limits for terrain
+  val min_limit: Int = 2
+  val max_limit: Int = 2
 
   //creates a new insect based upon an older one with an updated velocity, height and position
   def tick(insect: Insect): Insect = {
@@ -82,6 +88,23 @@ object Insect {
    (x,y)
   }
 
+  /*changes velocity to point the insect away from boundary
+  *velocity acts as a proxy for direction, so we can invert that
+  * if x = 1, x=-1 and vice-versa
+  * if y = 1, y=-1 and vice-versa
+  *
+  */
+  //@todo need to test and call where appropriate
+  def invert_direction(insect: Insect): Insect = {
+    val (x,y) = insect.velocity
+    insect.position match {
+      case (Insect.max_limit, _) => insect.copy(velocity=(x*(-1), y))
+      case (Insect.min_limit, _) => insect.copy((x*(-1), y))
+      case (_, Insect.max_limit) => insect.copy((x, y*(-1)))
+      case (_, Insect.min_limit) => insect.copy((x, y*(-1)))
+      case (_, _) => insect
+    }
+  }
 
   def update_position(insect: Insect): Position = {
     //create new positions
@@ -91,8 +114,8 @@ object Insect {
 
     //take into account what happens at the edge of the display
     def terrain_limit(coordinant: Double): Double = {
-      if (coordinant < 0.0) 0.0
-      else if (coordinant > 1.0) 1.0
+      if (coordinant < min_limit) min_limit
+      else if (coordinant > max_limit) max_limit
       else coordinant
     }
 

@@ -49,7 +49,7 @@ object Simulator{
     (r.nextFloat(), r.nextFloat())
   }
 
-  def create_random_velocity(): Velocity = (scala.util.Random.nextFloat(), scala.util.Random.nextFloat() )
+  def create_random_velocity(): Velocity = (scala.util.Random.nextFloat()*scala.util.Random.nextInt(), scala.util.Random.nextFloat() )
 
 
   //  =========== RUN SIMULATION ========
@@ -74,12 +74,12 @@ object Simulator{
     swarm.map(x => update_max(x))
 
     //update local and global maximum if necessary
-    def update_max(insect: Insect) = {
+    def update_max(insect: Insect): Unit = {
         if (insect.local_max_height > Insect.global_max_value) {
           Insect.global_max_value = insect.local_max_height
           Insect.global_max_position = insect.local_max_position
-        }
-    }
+        };
+    };
   }
 
   //logs results to console
