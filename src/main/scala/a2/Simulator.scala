@@ -36,7 +36,7 @@ object Simulator{
 
   //========== SETTINGS SWARM ===========
   //how often to report results
-  val log_every_n: Int = 1000
+  val log_every_n: Int = 100
   val verbose_logging: Boolean = true
 
 
@@ -103,7 +103,7 @@ object Simulator{
 
       //print top five
       println("top 5: ")
-      Simulator.top_positions_seen.map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position + " ID: " + x.id))
+      Simulator.top_positions_seen.map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position + " ID: " + x.id + " Vel: " + x.velocity))
 
       println("=========================")
       println("=========================")

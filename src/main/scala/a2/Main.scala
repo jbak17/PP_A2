@@ -17,7 +17,7 @@ class Main extends Application {
 
   // -------  CONTROLS --------
   val iterations: Int = 200
-  val size_of_swarm: Int = 50
+  val size_of_swarm: Int = 10
 
 
   override def start(primaryStage:Stage) = {
@@ -25,42 +25,34 @@ class Main extends Application {
     /*
      * The canvas will show our swarm results
      */
-    val c:Canvas = new Canvas(640, 580)
+    val height: Int = 500
+    val width: Int = 500
+    val c:Canvas = new Canvas(height, width)
 
     /*
-     * We're going to have two charts showing the x and y velocities of each insect.
+     * We're going to have showing the height of each insect.
      */
 
     // An axis for the insect number
-    val InsectAxis1 = new CategoryAxis()
-    InsectAxis1.setAnimated(false)
-    InsectAxis1.setTickLabelsVisible(false)
+    val InsectAxis = new CategoryAxis()
+    InsectAxis.setAnimated(false)
+    InsectAxis.setTickLabelsVisible(false)
 
-    // An axis for the x velocity
-    val vxAxis = new NumberAxis(-1, 1, 0.1)
-    vxAxis.setAnimated(false)
 
-    // Another axis for the insect number -- the second chart will be oriented in the other direction, so
-    // we need to keep the axis separate (not reuse the same axis) so it can size itself.
-    val InsectAxis2 = new CategoryAxis()
-    InsectAxis2.setAnimated(false)
-    InsectAxis2.setTickLabelsVisible(false)
+    // An axis for the height
+    val heightAxis = new NumberAxis(-2, 2, 0.1)
+    heightAxis.setAnimated(true)
 
-    // An axis for the y velocity
-    val vyAxis = new NumberAxis(-1, 1, 0.1)
-    vyAxis.setAnimated(false)
 
-    val yVelocityChart = new BarChart(InsectAxis1, vyAxis)
-    yVelocityChart.setLegendVisible(false)
-    yVelocityChart.setTitle("Y Velocities")
-
-    val xVelocityChart = new BarChart(vxAxis, InsectAxis2)
-    xVelocityChart.setLegendVisible(false)
-    xVelocityChart.setTitle("X Velocities")
+    val HeightChart = new BarChart(InsectAxis, heightAxis)
+    HeightChart.setLegendVisible(true)
+    HeightChart.setTitle("Insect heights")
+    HeightChart.setVerticalGridLinesVisible(false)
+    HeightChart.setHorizontalGridLinesVisible(false)
+    HeightChart.setBarGap(2.0)
 
     // These series hold the actual data points. Note that it is "Number" because it's a NumberAxis
-    val yVelocitySeries = new Series[String, Number]()
-    val xVelocitySeries = new Series[Number, String]()
+    val heightSeries = new Series[String, Number]()
 
     /**
       * The game state. This is just about the only var in the program!
@@ -73,25 +65,23 @@ class Main extends Application {
      */
     for {
       (insect, index) <- searchSwarm.swarm.zipWithIndex
-    } {
-      val (vx, vy) = insect.velocity
-      xVelocitySeries.getData.add(new XYChart.Data(vx, index.toString))
-      yVelocitySeries.getData.add(new XYChart.Data(index.toString, vy))
-    }
+      }
+      {
+      val (height) = insect.height
+      heightSeries.getData.add(new XYChart.Data(index.toString, height))
+      }
 
     /*
      * And then we mustn't forget to add the series into the charts!
      */
-    yVelocityChart.getData.add(yVelocitySeries)
-    xVelocityChart.getData.add(xVelocitySeries)
+    HeightChart.getData.add(heightSeries)
 
     /*
      * A panel to layout our UI components
      */
     val pane = new GridPane()
     pane.add(c, 0, 0)
-    pane.add(yVelocityChart, 0, 1)
-    pane.add(xVelocityChart, 1, 0)
+    pane.add(HeightChart, 0, 1)
 
     /*
      * And then put that into a Scene on a Stage
@@ -133,15 +123,17 @@ class Main extends Application {
         // Draw the insects on the canvas
         releaseSwarm(searchSwarm, c)
 
+
         // Update the data series
         // JavaFX charts use "ObservableLists".
         // getData gets the list, and then because JavaFX works using mutable data, we can update the datapoint
         for {
-          (a, i) <- searchSwarm.swarm.zipWithIndex
+          (insect, i) <- searchSwarm.swarm.zipWithIndex
         } {
-          xVelocitySeries.getData.get(i).setXValue(a.velocity._1)
-          yVelocitySeries.getData.get(i).setYValue(a.velocity._2)
-        }
+          heightSeries.getData.get(i).setYValue(insect.height)
+          }
+
+        Thread.sleep(500)
 
       }
     }.start()
@@ -163,19 +155,24 @@ class Main extends Application {
     g2d.fillRect(0, 0, c.getWidth, c.getHeight)
 
     // Render the items
-    for {
-      gameItem <- state.swarm
-    } {
+    for (gameItem <- state.swarm)
+     {
       gameItem match {
         case Insect(position, velocity, id) =>
           // Note that we have to set the fill colour before we fill
           val size: Int = 10
           g2d.setFill(Color.YELLOW)
           val (x, y) = position
+          //g2d.fillOval(x*(c.getHeight/Insect.max_limit), y*(c.getHeight/Insect.max_limit), size, size)
           g2d.fillOval(x, y, size, size)
-
       }
-    }
+
+     }
+    //mark highest position seen
+    g2d.setFill(Color.RED)
+    //g2d.fillOval(Insect.global_max_position._1*(c.getHeight/Insect.max_limit), Insect.global_max_position._2*(c.getHeight/Insect.max_limit), 10, 10)
+    g2d.fillOval(Insect.global_max_position._1, Insect.global_max_position._2, 10, 10)
+
   }
 
 

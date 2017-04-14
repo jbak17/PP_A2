@@ -41,21 +41,27 @@ object Insect {
   var id_counter = 0
 
   //********* SETTINGS *************
-  //maximum positions
   var global_max_position: Position = (0, 0)
   //initialised well below expect value so that the first
   // iteration will find a higher value
-  var global_max_value: Double = -100.0
+  var global_max_value: Double = -1000000.0
 
   //position limits for terrain
   val min_limit: Int = 0
-  val max_limit: Int = 2
+  val max_limit: Double = 500
 
   //********* CREATE NEW INSECTS *************
   def spawn(): Insect = {
     id_counter += 1
-    Insect(create_random_position(), create_random_velocity(), id_counter)
-
+    //first insect should initialise max height
+    val new_insect: Insect = Insect(create_random_position(), create_random_velocity(), id_counter)
+    new_insect.local_max_position = new_insect.position
+    new_insect.local_max_height = height(new_insect.position._1, new_insect.position._2)
+    if (new_insect.local_max_height > Insect.global_max_value){
+      Insect.global_max_position = new_insect.position
+      Insect.global_max_value = new_insect.height
+    }
+    new_insect
   }
 
   //creates a random position (x,y) within boundaries
@@ -108,8 +114,9 @@ object Insect {
   }
 
     //calculates current height for use in formulas
-    val x: Double = speed_check((0.5 * insect.velocity._1)+(2*r.nextFloat()*(insect.local_max_height -  insect.height))+(2*r.nextFloat()*(global_max_position._1 - insect.height)))
-    val y: Double = speed_check((0.5 * insect.velocity._2)+(2*r.nextFloat()*(insect.local_max_height - insect.height))+(2*r.nextFloat()*(global_max_position._2 - insect.height)))
+    val x: Double = speed_check((0.5 * insect.velocity._1)+(2*r.nextFloat()*(insect.local_max_position._1 -  insect.position._1))+(2*r.nextFloat()*(global_max_position._1 - insect.position._1)))
+
+    val y: Double = speed_check((0.5 * insect.velocity._2)+(2*r.nextFloat()*(insect.local_max_position._2 - insect.position._2))+(2*r.nextFloat()*(global_max_position._2 - insect.position._2)))
 
    (x,y)
   }
@@ -131,7 +138,6 @@ object Insect {
     val x_cord = (insect.velocity._1) + insect.position._1
     val y_cord = (insect.velocity._2) + insect.position._2
 
-
     //take into account what happens at the edge of the display
     def terrain_limit(coordinant: Double): Double = {
       if (coordinant < min_limit) min_limit
@@ -139,14 +145,16 @@ object Insect {
       else coordinant
     }
 
-    val new_pos = Seq(x_cord, y_cord).map(x => terrain_limit(x))
+    //val new_pos = Seq(x_cord, y_cord).map(x => terrain_limit(x))
 
 
-    (new_pos(0), new_pos(1))
-
+    //(new_pos(0), new_pos(1))
+    (x_cord, y_cord)
   }
 
-  def height(x:Double, y:Double):Double = math.sin(10*math.Pi*x) * math.sin(10*math.Pi*y) - 10*(math.pow(x-0.5, 2) + math.pow(y-0.5, 2))
+  def height(x:Double, y:Double):Double = math.cos(x) + math.sin(y)
+
+    //math.sin(10*math.Pi*x) * math.sin(10*math.Pi*y) - 10*(math.pow(x-0.5, 2) + math.pow(y-0.5, 2))
 
 }
 
