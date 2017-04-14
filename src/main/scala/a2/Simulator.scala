@@ -34,6 +34,12 @@ case class Simulator(swarm_size: Int, iterations: Int) {
 
 object Simulator{
 
+  //========== SETTINGS SWARM ===========
+  //how often to report results
+  val log_every_n: Int = 1000
+  val verbose_logging: Boolean = true
+
+
   var top_positions_seen: Swarm = mutable.Seq()
   //========== INITIALISE SWARM ===========
 
@@ -41,16 +47,7 @@ object Simulator{
 	def create_swarm(swarm_size: Int): Swarm = for (x <- 1 to swarm_size) yield create_insect()
 
   //an insect needs a position and a velocity
-	def create_insect(): Insect = Insect(create_random_position(), create_random_velocity())
-
-  //creates a random position (x,y) within 0.0 and 1.0
-  def create_random_position(): Position = {
-    val r = scala.util.Random
-    (r.nextFloat(), r.nextFloat())
-  }
-
-  def create_random_velocity(): Velocity = (scala.util.Random.nextFloat()*scala.util.Random.nextInt(), scala.util.Random.nextFloat() )
-
+	def create_insect(): Insect = Insect.spawn()
 
   //  =========== RUN SIMULATION ========
 
@@ -61,7 +58,8 @@ object Simulator{
       simulator.swarm = update_swarm(simulator.swarm)
       update_highest_record(simulator.swarm)
       get_telemetry(simulator.swarm)
-      report_results(simulator.swarm)
+      //print every 1000th result
+      if (iteration%log_every_n==0) report_results(simulator.swarm)
     }
   }
 
@@ -78,25 +76,39 @@ object Simulator{
         if (insect.local_max_height > Insect.global_max_value) {
           Insect.global_max_value = insect.local_max_height
           Insect.global_max_position = insect.local_max_position
-        };
-    };
+        }
+    }
   }
 
   //logs results to console
   //need to log best results seen so far and height
 	def report_results(swarm: Swarm): Unit = {
     //print maximum position and height
+    if (!(verbose_logging)){
+      println(s"The highest position seen so far is:" + Insect.global_max_value + "\n" + s"The location is: " + Insect.global_max_position)
 
-    println(s"The highest position seen so far is:" + Insect.global_max_value + "\n" + s"The location is: " + Insect.global_max_position)
+      println("=========================")
 
-    println("=========================")
+      //print top five
+      println("Next five highest locations: ")
+      Simulator.top_positions_seen.map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position))
 
-    //print top five
-    println("Next five highest locations: ")
-    Simulator.top_positions_seen.map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position))
+      println("=========================")
+      println("=========================")
+    }
+    else {
+      println(s"max:" + Insect.global_max_value + "\n" + s"max pos: " + Insect.global_max_position)
 
-    println("=========================")
-    println("=========================")
+      println("=========================")
+
+      //print top five
+      println("top 5: ")
+      Simulator.top_positions_seen.map(x => println("Height: " + x.local_max_height + ", Position: " + x.local_max_position + " ID: " + x.id))
+
+      println("=========================")
+      println("=========================")
+    }
+
   }
 
   //plots swarm graphically
@@ -108,6 +120,16 @@ object Simulator{
     val new_five: Swarm = swarm.sortBy(_.local_max_height).reverse.dropRight(swarm.size-6).drop(1)
 
     Simulator.top_positions_seen = (new_five ++ top_positions_seen).sortBy(_.local_max_height).reverse.take(5)
+
+  }
+
+  //used for testing: outputs telemetry from single particle
+  def track_insect(simulator: Simulator): Unit = {
+    var i1 = create_insect()
+    for (iteration <- 1 to simulator.iterations){
+      println("pos: "+ i1.position + "height: " + i1.height + "vel: " + i1.velocity)
+      i1 = Insect.tick(i1)
+    }
 
   }
 

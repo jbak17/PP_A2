@@ -10,7 +10,12 @@ object A2 extends App{
   type Position = (Double, Double)
   type Swarm = Seq[Insect]
 
-  val s = Simulator(15, 10)
+  val s = Simulator(1000, 10000)
   Simulator.run(s)
 
+
+  /*
+  val s = Simulator(1,50)
+  Simulator.track_insect(s)
+  */
 }

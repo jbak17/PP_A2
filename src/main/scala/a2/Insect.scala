@@ -26,7 +26,8 @@ import scala.collection.mutable.ArrayBuffer
   */
 
 
-case class Insect(position: Position, velocity: Velocity) {
+case class Insect(position: Position, velocity: Velocity, id:Int) {
+  val insect_ID: Int = id
   var local_max_position: Position = position
   var local_max_height: Double = Insect.update_height(this)
   var height: Double = Insect.height(position._1, position._2)
@@ -37,13 +38,37 @@ case class Insect(position: Position, velocity: Velocity) {
 
 object Insect {
   val r = scala.util.Random
+  var id_counter = 0
+
+  //********* SETTINGS *************
+  //maximum positions
   var global_max_position: Position = (0, 0)
+  //initialised well below expect value so that the first
+  // iteration will find a higher value
   var global_max_value: Double = -100.0
 
   //position limits for terrain
-  val min_limit: Int = 2
+  val min_limit: Int = 0
   val max_limit: Int = 2
 
+  //********* CREATE NEW INSECTS *************
+  def spawn(): Insect = {
+    id_counter += 1
+    Insect(create_random_position(), create_random_velocity(), id_counter)
+
+  }
+
+  //creates a random position (x,y) within boundaries
+  def create_random_position(): Position = (r.nextDouble()*max_limit, r.nextDouble()*max_limit)
+
+  //creates random velocity in range (-1.0 to 1.0)
+  def create_random_velocity(): Velocity = {
+    val velocity = Seq.fill(2)(r.nextDouble()).map(x => if (r.nextBoolean()) x*(-1) else x)
+
+    (velocity(0), velocity(1))
+  }
+
+  //********* UPDATES EXISTING INSECTS *************
   //creates a new insect based upon an older one with an updated velocity, height and position
   def tick(insect: Insect): Insect = {
 
@@ -60,7 +85,8 @@ object Insect {
       new_insect.local_max_position = new_insect.position
     }
 
-    new_insect
+    //if the insect is at the border its velocity will be inverted
+    invert_direction(new_insect)
   }
 
   def update_height(insect: Insect): Double = height(insect.position._1, insect.position._2)
@@ -88,13 +114,7 @@ object Insect {
    (x,y)
   }
 
-  /*changes velocity to point the insect away from boundary
-  *velocity acts as a proxy for direction, so we can invert that
-  * if x = 1, x=-1 and vice-versa
-  * if y = 1, y=-1 and vice-versa
-  *
-  */
-  //@todo need to test and call where appropriate
+  //changes velocity to point the insect away from boundary
   def invert_direction(insect: Insect): Insect = {
     val (x,y) = insect.velocity
     insect.position match {
@@ -108,8 +128,8 @@ object Insect {
 
   def update_position(insect: Insect): Position = {
     //create new positions
-    val x_cord = insect.velocity._1 + insect.position._1
-    val y_cord = insect.velocity._2 + insect.position._2
+    val x_cord = (insect.velocity._1) + insect.position._1
+    val y_cord = (insect.velocity._2) + insect.position._2
 
 
     //take into account what happens at the edge of the display
@@ -126,10 +146,7 @@ object Insect {
 
   }
 
-
   def height(x:Double, y:Double):Double = math.sin(10*math.Pi*x) * math.sin(10*math.Pi*y) - 10*(math.pow(x-0.5, 2) + math.pow(y-0.5, 2))
-
-
 
 }
 

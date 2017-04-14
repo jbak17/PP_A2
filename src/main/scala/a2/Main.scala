@@ -37,7 +37,7 @@ class Main extends Application {
     InsectAxis1.setTickLabelsVisible(false)
 
     // An axis for the x velocity
-    val vxAxis = new NumberAxis(-50, 50, 10)
+    val vxAxis = new NumberAxis(-1, 1, 0.1)
     vxAxis.setAnimated(false)
 
     // Another axis for the insect number -- the second chart will be oriented in the other direction, so
@@ -47,7 +47,7 @@ class Main extends Application {
     InsectAxis2.setTickLabelsVisible(false)
 
     // An axis for the y velocity
-    val vyAxis = new NumberAxis(-50, 50, 10)
+    val vyAxis = new NumberAxis(-1, 1, 0.1)
     vyAxis.setAnimated(false)
 
     val yVelocityChart = new BarChart(InsectAxis1, vyAxis)
@@ -167,7 +167,7 @@ class Main extends Application {
       gameItem <- state.swarm
     } {
       gameItem match {
-        case Insect(position, velocity) =>
+        case Insect(position, velocity, id) =>
           // Note that we have to set the fill colour before we fill
           val size: Int = 10
           g2d.setFill(Color.YELLOW)
@@ -182,3 +182,10 @@ class Main extends Application {
 
 }
 
+object  Main {
+
+  def main(args: Array[String]): Unit ={
+    Application.launch(classOf[Main], args: _*)
+  }
+
+}

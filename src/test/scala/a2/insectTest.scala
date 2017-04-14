@@ -9,7 +9,7 @@ import org.scalatest._
 class insectTest extends FlatSpec {
 
   //Helper items to use in tests
-  val i1: Insect = Insect((0.5,0.5),(0.5,-0.5))
+  val i1: Insect = Insect.spawn()
   val mySwarm: Swarm = Simulator.create_swarm(25)
 
   "An Insect " should " be of class insect" in {
@@ -17,8 +17,9 @@ class insectTest extends FlatSpec {
   }
 
   "It" should " change velocity on update" in {
-    val i: Velocity = Insect.update_velocity(i1)
-    assert(i != (1,1))
+    val old_velocity: Velocity = i1.velocity
+    val new_velocity: Velocity = Insect.update_velocity(i1)
+    assert(old_velocity != new_velocity)
   }
 
   "An Insect's velocity" should "not exceed abs|1|" in {
@@ -37,6 +38,28 @@ class insectTest extends FlatSpec {
     assert(i2.position != (1,1))
   }
 
+  "A double" should "be returned from the height function" in {
+    assert(Insect.height(.9, 1.0).getClass() == classOf[Double])
+  }
+
+  //Test that the global positions are being updated
+  "A height" should "be added to the highest position seen after one iteration" in {
+    val newSwarm: Swarm = Simulator.update_swarm(mySwarm)
+    assert(Insect.global_max_value != 0.0)
+  }
+
+  "A insect" should "not change direction if it's velocity is within maximal bounds" in {
+
+    val i1: Insect = Insect.spawn()
+    assert(Insect.invert_direction(i1).velocity == i1.velocity)
+
+  }
+
+  "A insect" should "change direction if it has reached the border" in {
+
+    val i1: Insect = Insect((Insect.max_limit, 1.0), Insect.create_random_velocity(), Insect.id_counter)
+    assert(Insect.invert_direction(i1).velocity != i1.velocity)
+  }
   "A tick" should "create a new item that is different from the previous" in {
     val i2: Insect = Insect.tick(i1)
     assert(i1.position != i2.position)
@@ -55,28 +78,9 @@ class insectTest extends FlatSpec {
     assert(testBug.velocity != testBug.position)
   }
 
-  "A double" should "be returned from the height function" in {
-    assert(Insect.height(.9, 1.0).getClass() == classOf[Double])
-  }
+  "A swarm" should "have some insects with an initial negative velocity" in {
 
-  //Test that the global positions are being updated
-  "A height" should "be added to the highest position seen after one iteration" in {
-    val newSwarm: Swarm = Simulator.update_swarm(mySwarm)
-    assert(Insect.global_max_value != 0.0)
-  }
-
-  "A insect" should "not change direction if it's velocity is within maximal bounds" in {
-
-    val i1: Insect = Insect((0.5,0.5),(0.5,-0.5))
-    assert(Insect.invert_direction(i1).velocity == i1.velocity)
-
-  }
-
-  "A insect" should "change direction if it has reached the border" in {
-
-    val i1: Insect = Insect((2,2),(0.5,-0.5))
-    assert(Insect.invert_direction(i1).velocity != i1.velocity)
-
+    assertResult(false)(mySwarm.filter(x => x.velocity._1 < 0.0).isEmpty)
   }
 
 
