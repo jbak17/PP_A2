@@ -32,8 +32,6 @@ case class Insect(position: Position, velocity: Velocity, id:Int) {
   var local_max_height: Double = Insect.update_height(this)
   var height: Double = Insect.height(position._1, position._2)
 
-
-
 }
 
 object Insect {
@@ -91,8 +89,7 @@ object Insect {
       new_insect.local_max_position = new_insect.position
     }
 
-    //if the insect is at the border its velocity will be inverted
-    invert_direction(new_insect)
+    new_insect
   }
 
   def update_height(insect: Insect): Double = height(insect.position._1, insect.position._2)
@@ -121,40 +118,19 @@ object Insect {
    (x,y)
   }
 
-  //changes velocity to point the insect away from boundary
-  def invert_direction(insect: Insect): Insect = {
-    val (x,y) = insect.velocity
-    insect.position match {
-      case (Insect.max_limit, _) => insect.copy(velocity=(x*(-1), y))
-      case (Insect.min_limit, _) => insect.copy((x*(-1), y))
-      case (_, Insect.max_limit) => insect.copy((x, y*(-1)))
-      case (_, Insect.min_limit) => insect.copy((x, y*(-1)))
-      case (_, _) => insect
-    }
-  }
-
   def update_position(insect: Insect): Position = {
     //create new positions
     val x_cord = (insect.velocity._1) + insect.position._1
     val y_cord = (insect.velocity._2) + insect.position._2
 
-    //take into account what happens at the edge of the display
-    def terrain_limit(coordinant: Double): Double = {
-      if (coordinant < min_limit) min_limit
-      else if (coordinant > max_limit) max_limit
-      else coordinant
-    }
-
-    //val new_pos = Seq(x_cord, y_cord).map(x => terrain_limit(x))
-
-
     //(new_pos(0), new_pos(1))
     (x_cord, y_cord)
   }
 
-  def height(x:Double, y:Double):Double = math.cos(x) + math.sin(y)
+  def height(x:Double, y:Double):Double = math.sin(10*math.Pi*x) * math.sin(10*math.Pi*y) - 10*(math.pow(x-0.5, 2) + math.pow(y-0.5, 2))
 
-    //math.sin(10*math.Pi*x) * math.sin(10*math.Pi*y) - 10*(math.pow(x-0.5, 2) + math.pow(y-0.5, 2))
+  //testing formula
+  //math.cos(x) + math.sin(y)
 
 }
 

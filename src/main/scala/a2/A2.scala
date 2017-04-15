@@ -23,7 +23,7 @@ object A2 extends Application{
   type Swarm = Seq[Insect]
 
   // -------  CONTROLS --------
-  val iterations: Int = 200
+  val iterations: Int = 1
   val size_of_swarm: Int = 10
 
 
