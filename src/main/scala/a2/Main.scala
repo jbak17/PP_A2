@@ -1,5 +1,6 @@
 package a2
 
+
 import javafx.animation.AnimationTimer
 import javafx.application.Application
 import javafx.scene.Scene
@@ -15,8 +16,8 @@ import javafx.stage.Stage
   */
 class Main extends Application {
 
+
   // -------  CONTROLS --------
-  val iterations: Int = 200
   val size_of_swarm: Int = 10
 
 
@@ -37,11 +38,15 @@ class Main extends Application {
     val InsectAxis = new CategoryAxis()
     InsectAxis.setAnimated(false)
     InsectAxis.setTickLabelsVisible(false)
+    //InsectAxis.setAutoRanging(true)
+    InsectAxis.setLabel("Insect Number")
 
 
     // An axis for the height
     val heightAxis = new NumberAxis(-2, 2, 0.1)
     heightAxis.setAnimated(true)
+    //heightAxis.setAutoRanging(true)
+    heightAxis.setLabel("Height")
 
 
     val HeightChart = new BarChart(InsectAxis, heightAxis)
@@ -49,7 +54,7 @@ class Main extends Application {
     HeightChart.setTitle("Insect heights")
     HeightChart.setVerticalGridLinesVisible(false)
     HeightChart.setHorizontalGridLinesVisible(false)
-    HeightChart.setBarGap(2.0)
+    HeightChart.setStyle("-fx-bar-fill: red;")
 
     // These series hold the actual data points. Note that it is "Number" because it's a NumberAxis
     val heightSeries = new Series[String, Number]()
@@ -57,19 +62,16 @@ class Main extends Application {
     /**
       * The game state. This is just about the only var in the program!
       */
-    var searchSwarm = Simulator(size_of_swarm, iterations)
+    var searchSwarm = Simulator(size_of_swarm)
 
 
     /*
      * Initialise the chart with values. We have to add them to the series
      */
-    for {
-      (insect, index) <- searchSwarm.swarm.zipWithIndex
-      }
-      {
-      val (height) = insect.height
-      heightSeries.getData.add(new XYChart.Data(index.toString, height))
-      }
+    for ( (insect, index) <- searchSwarm.swarm.zipWithIndex)
+    {
+      heightSeries.getData.add(new XYChart.Data(index.toString, insect.height))
+    }
 
     /*
      * And then we mustn't forget to add the series into the charts!
@@ -131,9 +133,9 @@ class Main extends Application {
           (insect, i) <- searchSwarm.swarm.zipWithIndex
         } {
           heightSeries.getData.get(i).setYValue(insect.height)
-          }
+        }
 
-        Thread.sleep(500)
+        //Thread.sleep(100)
 
       }
     }.start()
@@ -156,7 +158,7 @@ class Main extends Application {
 
     // Render the items
     for (gameItem <- state.swarm)
-     {
+    {
       gameItem match {
         case Insect(position, velocity, id) =>
           // Note that we have to set the fill colour before we fill
@@ -167,15 +169,13 @@ class Main extends Application {
           g2d.fillOval(x, y, size, size)
       }
 
-     }
+    }
     //mark highest position seen
     g2d.setFill(Color.RED)
     //g2d.fillOval(Insect.global_max_position._1*(c.getHeight/Insect.max_limit), Insect.global_max_position._2*(c.getHeight/Insect.max_limit), 10, 10)
     g2d.fillOval(Insect.global_max_position._1, Insect.global_max_position._2, 10, 10)
 
   }
-
-
 
 }
 
@@ -184,5 +184,5 @@ object  Main {
   def main(args: Array[String]): Unit ={
     Application.launch(classOf[Main], args: _*)
   }
-
 }
+

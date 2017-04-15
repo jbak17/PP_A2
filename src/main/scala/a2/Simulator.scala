@@ -25,7 +25,7 @@ import scala.collection.mutable
   * - track_insect - can follow specific insect for testing purposes
   */
 
-case class Simulator(swarm_size: Int, iterations: Int) {
+case class Simulator(swarm_size: Int) {
 
   //var top_five_positions: mutable.ArrayBuffer[(Double, Double)];
   var swarm: Swarm = Simulator.create_swarm(swarm_size)
@@ -52,14 +52,10 @@ object Simulator{
 
   //updates the swarm, reports results
   def run(simulator: Simulator): Unit = {
-    //cycles simulation
-    for (iteration <- 1 to simulator.iterations){
-      simulator.swarm = update_swarm(simulator.swarm)
-      update_highest_record(simulator.swarm)
-      get_telemetry(simulator.swarm)
-      //print every 1000th result
-      if (iteration%log_every_n==0) report_results(simulator.swarm)
-    }
+    simulator.swarm = update_swarm(simulator.swarm)
+    update_highest_record(simulator.swarm)
+    get_telemetry(simulator.swarm)
+    report_results(simulator.swarm)
   }
 
   //updates each insect in swarm with new positions, velocities, heights
@@ -117,17 +113,6 @@ object Simulator{
     Simulator.top_positions_seen = (new_five ++ top_positions_seen).sortBy(_.local_max_height).reverse.take(5)
 
   }
-
-  //used for testing: outputs telemetry from single particle
-  def track_insect(simulator: Simulator): Unit = {
-    var i1 = Insect.spawn()
-    for (iteration <- 1 to simulator.iterations){
-      println("pos: "+ i1.position + "height: " + i1.height + "vel: " + i1.velocity)
-      i1 = Insect.tick(i1)
-    }
-
-  }
-
 
   // THE END //
 }

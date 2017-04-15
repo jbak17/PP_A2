@@ -24,11 +24,6 @@ class insectTest extends FlatSpec {
 
   "An Insect's velocity" should "not exceed abs|1|" in {
     val i: Velocity = Insect.update_velocity(i1)
-    def create(number_of_insects: Int): Array[Insect] = {
-      ///val swarm = Array[Insect](number_of_insects)
-      ???
-    }
-
     assert(i._1 >= -1 && i._1 <= 1)
     assert(i._2 >= -1 && i._2 <= 1)
   }
@@ -48,18 +43,6 @@ class insectTest extends FlatSpec {
     assert(Insect.global_max_value != 0.0)
   }
 
-  "A insect" should "not change direction if it's velocity is within maximal bounds" in {
-
-    val i1: Insect = Insect.spawn()
-    assert(Insect.invert_direction(i1).velocity == i1.velocity)
-
-  }
-
-  "A insect" should "change direction if it has reached the border" in {
-
-    val i1: Insect = Insect((Insect.max_limit, 1.0), Insect.create_random_velocity(), Insect.id_counter)
-    assert(Insect.invert_direction(i1).velocity != i1.velocity)
-  }
   "A tick" should "create a new item that is different from the previous" in {
     val i2: Insect = Insect.tick(i1)
     assert(i1.position != i2.position)

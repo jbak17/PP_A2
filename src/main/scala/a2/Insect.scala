@@ -41,7 +41,7 @@ object Insect {
   //********* SETTINGS *************
   var global_max_position: Position = (0, 0)
   //initialised well below expect value so that the first
-  // iteration will find a higher value
+  // iteration will likely find a higher value
   var global_max_value: Double = -1000000.0
 
   //position limits for terrain

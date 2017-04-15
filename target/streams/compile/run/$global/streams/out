@@ -1,8 +1,0 @@
-[0m[[0minfo[0m] [0mRunning a2.Main [0m
-[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes[0m
-[0m[[0mdebug[0m] [0m	/home/jeva/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
-[0m[[0mdebug[0m] [0m	/home/jeva/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	/home/jeva/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.1.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
