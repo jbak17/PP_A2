@@ -19,19 +19,21 @@ name hashing:
 1 items
 0 -> true
 products:
-9 items
+10 items
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$$anon$1.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$.class
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$delayedInit$body.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Insect$.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Insect.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main$$anon$1.class
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main$.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Simulator$.class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> /home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Simulator.class
 binary dependencies:
-9 items
+10 items
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /home/jeva/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> /home/jeva/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar
@@ -65,41 +67,164 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-9 items
+10 items
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> a2.A2
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> a2.A2$
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> a2.A2$delayedInit$body
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> a2.A2$$anon$1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> a2.Insect
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> a2.Insect$
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> a2.Main
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> a2.Main$
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> a2.Main$$anon$1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> a2.Simulator
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> a2.Simulator$
 used names:
-382 items
+537 items
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> $anon
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> -
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> /
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> <init>
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> >
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> A
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> A1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> A2
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> App
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> AnimationTimer
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Any
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> AnyRef
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Application
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Axis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> BLACK
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> BarChart
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Boolean
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> CanBuildFrom
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Canvas
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> CategoryAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Coll
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Color
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Data
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Double
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> EventHandler
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> FilterMonadic
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Function1
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> GraphicsContext
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> GridPane
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> HeightChart
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Insect
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> InsectAxis
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Int
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Object
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Long
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> MatchError
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Node
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Nothing
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Number
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> NumberAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> ObservableList
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Paint
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Parent
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Predef
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> RED
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Scene
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Seq
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Series
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Simulator
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Stage
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> String
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Swarm
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> System
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> T1
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> T2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> That
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Thread
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Tuple2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> U
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> Unit
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> WindowEvent
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> XYChart
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> YELLOW
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> _1
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> _2
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> a2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> add
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> animation
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> application
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> c
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> canBuildFrom
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> canvas
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> chart
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> collection
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> double2Double
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> exit
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> fillOval
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> fillRect
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> foreach
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> g2d
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> gameItem
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> get
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> getData
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> getGraphicsContext2D
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> getHeight
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> getWidth
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> global_max_position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> height
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> heightAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> heightSeries
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> i
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> index
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> insect
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> iterations
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> java
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> javafx
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> lang
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> last
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> last_=
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> layout
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> ne
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> now
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> package
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> paint
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> pane
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> primaryStage
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> releaseSwarm
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> run
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> s
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> scala
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> scene
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> searchSwarm
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setAnimated
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setBarGap
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setFill
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setHorizontalGridLinesVisible
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setLegendVisible
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setOnCloseRequest
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setScene
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setTickLabelsVisible
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setTitle
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setVerticalGridLinesVisible
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> setYValue
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> show
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> size
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> size_of_swarm
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> sleep
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> stage
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> start
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> state
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> swarm
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> toDouble
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> toString
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> unchecked
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> width
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> withFilter
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> x
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> y
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> zipWithIndex
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> &&
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> *
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> +
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> -
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> <
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> <byname>
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> <init>
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> <repeated>
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> ==
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> >
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> A
@@ -120,6 +245,7 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Insect
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Int
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Iterator
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> MatchError
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> None
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Nothing
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Object
@@ -132,21 +258,24 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Seq
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Serializable
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Some
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Statics
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> String
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> T
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> T0
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> T1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> T2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> T3
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> That
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Tuple2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Tuple3
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Unit
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> Velocity
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> _1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> _2
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> _hashCode
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> _root_
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> _toString
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> a2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> anyHash
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> apply
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> asInstanceOf
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> bind
@@ -154,14 +283,26 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> collection
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> com
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> coordinant
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> cos
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> create_random_position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> create_random_velocity
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> eq
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> fill
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> finalizeHash
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> global_max_position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> global_max_position_=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> global_max_value
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> global_max_value_=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> height
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> height_=
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> id
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> id_counter
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> id_counter_=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> impl
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> insect
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> insect_ID
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> internal
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> invert_direction
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> isInstanceOf
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> local_max_height
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> local_max_height_=
@@ -170,15 +311,19 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> map
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> math
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> max
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> max_limit
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> messaging
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> min
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> min_limit
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> mix
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> mutable
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> ne
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> new_insect
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> new_pos
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> nextBoolean
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> nextDouble
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> nextFloat
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> package
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> position
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> pow
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> r
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> runtime
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> saaj
@@ -187,9 +332,10 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> soap
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> speed_check
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> sun
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> terrain_limit
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> toDouble
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> toString
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> typedProductIterator
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> unchecked
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> update_height
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> update_position
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> update_velocity
@@ -197,6 +343,9 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> v2
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> velocity
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> x
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> x$2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> x$3
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> x$4
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> x_cord
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> xml
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> y
@@ -206,7 +355,9 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> -
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> /
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> <init>
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> <repeated...>
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> >
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> ?0
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> A
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> A1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> A2
@@ -214,6 +365,7 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Any
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> AnyRef
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Application
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Array
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Axis
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> BLACK
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> BarChart
@@ -221,6 +373,7 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> CanBuildFrom
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Canvas
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> CategoryAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Class
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Coll
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Color
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Data
@@ -230,9 +383,9 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Function1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> GraphicsContext
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> GridPane
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> HeightChart
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Insect
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> InsectAxis1
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> InsectAxis2
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> InsectAxis
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Int
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Long
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Main
@@ -241,11 +394,13 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Nothing
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Number
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> NumberAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Object
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> ObservableList
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Paint
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Parent
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Position
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Predef
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> RED
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Scene
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Seq
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Series
@@ -257,20 +412,20 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> T1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> T2
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> That
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Thread
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Tuple2
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> U
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Unit
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> Velocity
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> WindowEvent
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> XYChart
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> YELLOW
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> _1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> _2
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> a
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> a2
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> add
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> animation
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> application
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> args
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> c
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> canBuildFrom
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> canvas
@@ -288,6 +443,10 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> getGraphicsContext2D
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> getHeight
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> getWidth
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> global_max_position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> height
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> heightAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> heightSeries
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> i
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> index
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> insect
@@ -297,6 +456,7 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> lang
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> last
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> last_=
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> launch
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> layout
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> ne
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> now
@@ -310,17 +470,20 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> scene
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> searchSwarm
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setAnimated
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setBarGap
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setFill
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setHorizontalGridLinesVisible
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setLegendVisible
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setOnCloseRequest
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setScene
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setTickLabelsVisible
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setTitle
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setXValue
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setVerticalGridLinesVisible
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> setYValue
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> show
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> size
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> size_of_swarm
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> sleep
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> stage
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> start
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> state
@@ -328,19 +491,12 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> toDouble
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> toString
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> unchecked
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> velocity
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> vx
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> vxAxis
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> vy
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> vyAxis
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> width
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> withFilter
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> x
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> xVelocityChart
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> xVelocitySeries
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> y
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> yVelocityChart
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> yVelocitySeries
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> zipWithIndex
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> %
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> &&
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> +
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> ++
@@ -359,7 +515,6 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> CanBuildFrom
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Coll
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Double
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Float
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Function1
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> GenTraversableOnce
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Inclusive
@@ -376,7 +531,6 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Position
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Predef
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Product
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Random
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> Range
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> RichInt
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> ScalaRunTime
@@ -405,8 +559,6 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> canBuildFrom
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> collection
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> create_insect
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> create_random_position
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> create_random_velocity
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> create_swarm
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> drop
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> dropRight
@@ -418,22 +570,26 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> global_max_position_=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> global_max_value
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> global_max_value_=
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> height
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> i1
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> id
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> immutable
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> insect
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> intWrapper
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> isInstanceOf
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> iteration
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> iterations
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> local_max_height
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> local_max_position
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> log_every_n
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> map
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> math
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> mix
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> mutable
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> new_five
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> nextFloat
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> package
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> position
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> println
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> r
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> report_results
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> reverse
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> runtime
@@ -442,40 +598,43 @@ used names:
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> simulator
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> size
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> sortBy
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> spawn
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> swarm
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> swarm_=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> swarm_size
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> take
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> tick
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> to
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> toDouble
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> toString
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> top_positions_seen
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> top_positions_seen_=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> typedProductIterator
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> unary_!
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> update_highest_record
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> update_max
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> update_swarm
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> util
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> velocity
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> verbose_logging
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> x
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> ||
 product stamps:
-9 items
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$delayedInit$body.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Insect$.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Insect.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main$$anon$1.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main.class -> lastModified(1492021147000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Simulator$.class -> lastModified(1492021452000)
-/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Simulator.class -> lastModified(1492021452000)
+10 items
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$$anon$1.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2$.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/A2.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Insect$.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Insect.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main$$anon$1.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main$.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Main.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Simulator$.class -> lastModified(1492260507000)
+/home/jeva/Dropbox/Paradigms/Assignment_2/target/scala-2.12/classes/a2/Simulator.class -> lastModified(1492260507000)
 source stamps:
 4 items
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> hash(49ebc8e76b66ddb6dbd062b0d18843311ebf2ca7)
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> hash(c7aa0bfcd8ad525a17837d9c29a95e2eaff9a563)
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> hash(acc01345c3ea7fe304d1e74e7bc3214b84139e31)
-/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> hash(7deff21d359a4f12d8110b0231eb788e9142efb8)
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> hash(850e6d90c3740c3030d76640337e8b7f9e3f8456)
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> hash(017d8fa59292c66cf73b7fff3f729a92ed034427)
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> hash(164bdf330b3d09f2acec170eb37a47e50a7f5624)
+/home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> hash(577b576fb3d81398768a8835f0060a8fe2d62295)
 binary stamps:
 3 items
 /home/jeva/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar -> lastModified(1480936165000)
@@ -489,13 +648,13 @@ class names:
 internal apis:
 4 items
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/A2.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwkeFykQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAdc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwJ5+ucXQABm5vdGlmeXNxAH4ADN0HpMV0AAFzc3EAfgAM7NSMrXQABHdhaXRzcQB+AAy4RjbJdAANJGFzSW5zdGFuY2VPZnNxAH4ADMEmxqB0AAZlcXVhbHNzcQB+AAwf0LGudAAIUG9zaXRpb25zcQB+AAxXRUijdAAMYXNJbnN0YW5jZU9mc3EAfgAMSLpyunQADmV4ZWN1dGlvblN0YXJ0c3EAfgAM2Uk0nXQABVN3YXJtc3EAfgAMdLolPHQADHN5bmNocm9uaXplZHNxAH4ADM3cR5h0AAhWZWxvY2l0eXNxAH4ADINePq10AA0kaXNJbnN0YW5jZU9mc3EAfgAM8lByiXQABG1haW5zcQB+AAwJjm8KdAAJbm90aWZ5QWxsc3EAfgAMG/2Qo3QADGlzSW5zdGFuY2VPZnNxAH4ADPuUa7p0AAJBMnNxAH4ADIq3QVB0AAI9PXNxAH4ADMyRtyZ0AAVjbG9uZXNxAH4ADOQ3KsF0AAYkaW5pdCRzcQB+AAwxh30ZdAAIdG9TdHJpbmdzcQB+AAwc7IPkdAAEYXJnc3NxAH4ADPvfJkB0AAIhPXNxAH4ADKa1A410AAhnZXRDbGFzc3NxAH4ADP6Ign50AAJuZXNxAH4ADIZq5bZ0AAJlcXNxAH4ADFBxXiR0AAtkZWxheWVkSW5pdHNxAH4ADFQkAG10AAIjI3NxAH4ADHHjBZt0AAhmaW5hbGl6ZXNxAH4ADAcMihx0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AFF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AAVhMi5BMnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAJ0ABpzY2FsYS5kZXByZWNhdGVkT3ZlcnJpZGluZ3QAEHNjYWxhLmRlcHJlY2F0ZWRzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4Aa3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBRTAAJaW5oZXJpdGVkcQB+AFFMAAdwYXJlbnRzcQB+AFF4cQB+AHBzcQB+AGt1cQB+AEwAAAAAc3EAfgBrdXEAfgBMAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBScQB+AFt1cQB+AFwAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXEAfgB6eHB1cgAfW0x4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW50O1Gdpo84JQ94AgAAeHAAAAABc3IAHHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnTWRbHYAxsXfAIAAkwABG5hbWVxAH4ADUwABXZhbHVlcQB+AA14cHQAAHQAKigibWFpbiBzaG91bGQgbm90IGJlIG92ZXJyaWRkZW4iLCIyLjExLjAiKXNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AG90ABRkZXByZWNhdGVkT3ZlcnJpZGluZ3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Ab3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AlHNxAH4AXgBxAH4AJ3VxAH4AYQAAAABzcQB+AId0AARVbml0cQB+AI11cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgB6eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBkdAAFUGxhaW5xAH4AN3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AiFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4Ab3NxAH4Ah3QABUFycmF5cQB+AI11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4Ah3QABlN0cmluZ3NxAH4Ai3NxAH4AjnVxAH4AkQAAAANzcQB+AJN0AARqYXZhc3EAfgCTdAAEbGFuZ3EAfgCYc3EAfgBrdXEAfgCvAAAABHNxAH4Ah3QAA0FwcHEAfgCNc3EAfgCHdAALRGVsYXllZEluaXRxAH4AjXNxAH4Ah3QABk9iamVjdHEAfgCzc3EAfgCHdAADQW55cQB+AI11cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAJhMnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2Nj3JR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABDL2hvbWUvamV2YS9Ecm9wYm94L1BhcmFkaWdtcy9Bc3NpZ25tZW50XzIvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFEnryOdrZt2229BisNGIQzEevyyn
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwzx6XdwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAgc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwJ5+ucXQABm5vdGlmeXNxAH4ADDT+vXR0AA9nZXRIb3N0U2VydmljZXNzcQB+AAzs1IytdAAEd2FpdHNxAH4ADLhGNsl0AA0kYXNJbnN0YW5jZU9mc3EAfgAMlpAKT3QADHJlbGVhc2VTd2FybXNxAH4ADMEmxqB0AAZlcXVhbHNzcQB+AAwf0LGudAAIUG9zaXRpb25zcQB+AAxXRUijdAAMYXNJbnN0YW5jZU9mc3EAfgAM2Uk0nXQABVN3YXJtc3EAfgAMdLolPHQADHN5bmNocm9uaXplZHNxAH4ADM3cR5h0AAhWZWxvY2l0eXNxAH4ADINePq10AA0kaXNJbnN0YW5jZU9mc3EAfgAMMvXEW3QAD25vdGlmeVByZWxvYWRlcnNxAH4ADM147/N0AARzdG9wc3EAfgAMCY5vCnQACW5vdGlmeUFsbHNxAH4ADBv9kKN0AAxpc0luc3RhbmNlT2ZzcQB+AAxj1IHpdAANc2l6ZV9vZl9zd2FybXNxAH4ADE4g/D10AAJBMnNxAH4ADIq3QVB0AAI9PXNxAH4ADMyRtyZ0AAVjbG9uZXNxAH4ADDGHfRl0AAh0b1N0cmluZ3NxAH4ADPvfJkB0AAIhPXNxAH4ADJdmqoJ0AA1nZXRQYXJhbWV0ZXJzc3EAfgAMprUDjXQACGdldENsYXNzc3EAfgAMcP9PaHQACml0ZXJhdGlvbnNzcQB+AAwTduSMdAAFc3RhcnRzcQB+AAz+iIJ+dAACbmVzcQB+AAyVogLEdAAEaW5pdHNxAH4ADIZq5bZ0AAJlcXNxAH4ADFQkAG10AAIjI3NxAH4ADHHjBZt0AAhmaW5hbGl6ZXNxAH4ADAcMihx0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AFd4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AAVhMi5BMnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4Ab3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBXTAAJaW5oZXJpdGVkcQB+AFdMAAdwYXJlbnRzcQB+AFd4cQB+AHRzcQB+AG91cQB+AFIAAAAAc3EAfgBvdXEAfgBSAAAAAHNxAH4Ab3VyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAADc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Ac3QAC0FwcGxpY2F0aW9uc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBzc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAZqYXZhZnhzcQB+AIx0AAthcHBsaWNhdGlvbnNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCNc3EAfgCAdAAGT2JqZWN0c3EAfgCEc3EAfgCHdXEAfgCKAAAAA3NxAH4AjHQABGphdmFzcQB+AIx0AARsYW5ncQB+AJNzcQB+AIB0AANBbnlzcQB+AIRzcQB+AId1cQB+AIoAAAACc3EAfgCMdAAFc2NhbGFxAH4Ak3VyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAAmEyc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbcag4BnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvaG9tZS9qZXZhL0Ryb3Bib3gvUGFyYWRpZ21zL0Fzc2lnbm1lbnRfMi90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUhQ5tkMN0DDAw12ZAM36Lf54/hFY=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Insect.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwWeDeyAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAsc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwyAYIBHQABm5vdGlmeXNxAH4ADFrGFkx0AAd1bmFwcGx5c3EAfgAMItS3m3QABHdhaXRzcQB+AAxGOb6xdAAOY29weSRkZWZhdWx0JDJzcQB+AAzfEDKNdAANJGFzSW5zdGFuY2VPZnNxAH4ADOL39YZ0AAxwcm9kdWN0QXJpdHlzcQB+AAwXAOPVdAAGZXF1YWxzc3EAfgAMXmley3QADGFzSW5zdGFuY2VPZnNxAH4ADEFN9aV0ABBnbG9iYWxfbWF4X3ZhbHVlc3EAfgAMOE9cAnQADHN5bmNocm9uaXplZHNxAH4ADDYCnj90ABJsb2NhbF9tYXhfcG9zaXRpb25zcQB+AAxSp4jHdAAGSW5zZWN0c3EAfgAMIuj6WHQADSRpc0luc3RhbmNlT2ZzcQB+AAyzpoyDdAAGaGVpZ2h0c3EAfgAMjNY81nQAD3VwZGF0ZV9wb3NpdGlvbnNxAH4ADLzKIR90AAhjYW5FcXVhbHNxAH4ADDE904h0AA91cGRhdGVfdmVsb2NpdHlzcQB+AAxeUFx2dAANcHJvZHVjdFByZWZpeHNxAH4ADMHXbpV0AAR0aWNrc3EAfgAM1HhFNnQACW5vdGlmeUFsbHNxAH4ADHAovdJ0AAxpc0luc3RhbmNlT2ZzcQB+AAyQzIbLdAAQbG9jYWxfbWF4X2hlaWdodHNxAH4ADC6xtxt0AAY8aW5pdD5zcQB+AAxXPDVydAAFYXBwbHlzcQB+AAxfhP/qdAANdXBkYXRlX2hlaWdodHNxAH4ADOezikN0AAI9PXNxAH4ADAB+8GN0AAVjbG9uZXNxAH4ADBdRrZZ0AAYkaW5pdCRzcQB+AAxnvtYxdAAEY29weXNxAH4ADHEodUd0AAhwb3NpdGlvbnNxAH4ADOO0gmB0AAh0b1N0cmluZ3NxAH4ADFVBVrN0ABNnbG9iYWxfbWF4X3Bvc2l0aW9uc3EAfgAMCgH8qnQAAiE9c3EAfgAMNQ+Y9XQACGdldENsYXNzc3EAfgAM1DZzUXQADmNvcHkkZGVmYXVsdCQxc3EAfgAMQ0c9FnQAAXJzcQB+AAw3iAI1dAACbmVzcQB+AAwGPNUxdAAIdmVsb2NpdHlzcQB+AAzjMEeydAACZXFzcQB+AAwBcTBSdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAM1LiR4nQAAiMjc3EAfgAMSP0ubHQACGZpbmFsaXplc3EAfgAMuoeCFnQADnByb2R1Y3RFbGVtZW50c3EAfgAMrz0YfnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4Ab3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQACWEyLkluc2VjdHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCHc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AG9MAAlpbmhlcml0ZWRxAH4Ab0wAB3BhcmVudHNxAH4Ab3hxAH4AjHNxAH4Ah3VxAH4AagAAAABzcQB+AId1cQB+AGoAAAAAc3EAfgCHdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCLdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCLc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgClc3EAfgCYcQB+AJtzcQB+AJxzcQB+AJ91cQB+AKIAAAADc3EAfgCkdAAEamF2YXNxAH4ApHQAAmlvcQB+AKlzcQB+AJh0AAdQcm9kdWN0cQB+AJ5zcQB+AJh0AAZFcXVhbHNxAH4AnnNxAH4AmHQABk9iamVjdHNxAH4AnHNxAH4An3VxAH4AogAAAANzcQB+AKRxAH4Ar3NxAH4ApHQABGxhbmdxAH4AqXNxAH4AmHQAA0FueXEAfgCec3EAfgBscQB+AHl1cQB+AHoAAAAAc3EAfgB8AHQACWEyLkluc2VjdHVxAH4AfwAAAAB+cQB+AIF0AAZNb2R1bGV1cQB+AIUAAAAAc3EAfgCHcQB+AI1zcQB+AIdzcQB+AI9zcQB+AId1cQB+AGoAAAAAc3EAfgCHdXEAfgBqAAAAAHNxAH4Ah3VxAH4AlgAAAARzcQB+AJhxAH4Am3NxAH4AnHNxAH4An3VxAH4AogAAAAJzcQB+AKRxAH4Ap3EAfgCpc3EAfgCYcQB+AJtzcQB+AJxzcQB+AJ91cQB+AKIAAAADc3EAfgCkcQB+AK9zcQB+AKR0AAJpb3EAfgCpc3EAfgCYcQB+ALdzcQB+AJxzcQB+AJ91cQB+AKIAAAADc3EAfgCkcQB+AK9zcQB+AKRxAH4AvXEAfgCpc3EAfgCYcQB+AL9xAH4A0nVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAAmEyc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbY2PclHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvaG9tZS9qZXZhL0Ryb3Bib3gvUGFyYWRpZ21zL0Fzc2lnbm1lbnRfMi90YXJnZXQvc2NhbGEtMi4xMi9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUx6oL/NitUloXg32cKaleLq/5pWM=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhweR79JgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAA2c3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwyAYIBHQABm5vdGlmeXNxAH4ADHoSICJ0AAd1bmFwcGx5c3EAfgAMW/4zjXQAEGludmVydF9kaXJlY3Rpb25zcQB+AAwi1LebdAAEd2FpdHNxAH4ADEY5vrF0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADN8QMo10AA0kYXNJbnN0YW5jZU9mc3EAfgAM3uFkkXQACWluc2VjdF9JRHNxAH4ADDcC3m50ABZjcmVhdGVfcmFuZG9tX3ZlbG9jaXR5c3EAfgAM4vf1hnQADHByb2R1Y3RBcml0eXNxAH4ADBcA49V0AAZlcXVhbHNzcQB+AAz8HjqVdAAFc3Bhd25zcQB+AAxeaV7LdAAMYXNJbnN0YW5jZU9mc3EAfgAMQU31pXQAEGdsb2JhbF9tYXhfdmFsdWVzcQB+AAw4T1wCdAAMc3luY2hyb25pemVkc3EAfgAMNgKeP3QAEmxvY2FsX21heF9wb3NpdGlvbnNxAH4ADFKniMd0AAZJbnNlY3RzcQB+AAwi6PpYdAANJGlzSW5zdGFuY2VPZnNxAH4ADLOmjIN0AAZoZWlnaHRzcQB+AAyM1jzWdAAPdXBkYXRlX3Bvc2l0aW9uc3EAfgAMvMohH3QACGNhbkVxdWFsc3EAfgAMMT3TiHQAD3VwZGF0ZV92ZWxvY2l0eXNxAH4ADF5QXHZ0AA1wcm9kdWN0UHJlZml4c3EAfgAMwddulXQABHRpY2tzcQB+AAzUeEU2dAAJbm90aWZ5QWxsc3EAfgAMcCi90nQADGlzSW5zdGFuY2VPZnNxAH4ADJDMhst0ABBsb2NhbF9tYXhfaGVpZ2h0c3EAfgAMSvE16nQACmlkX2NvdW50ZXJzcQB+AAyd96VAdAAGPGluaXQ+c3EAfgAMRJLJm3QAAmlkc3EAfgAMezoxb3QABWFwcGx5c3EAfgAMZSHkJ3QACW1heF9saW1pdHNxAH4ADF+E/+p0AA11cGRhdGVfaGVpZ2h0c3EAfgAM57OKQ3QAAj09c3EAfgAMAH7wY3QABWNsb25lc3EAfgAMF1GtlnQABiRpbml0JHNxAH4ADC6lHhF0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADI05kmB0AARjb3B5c3EAfgAMcSh1R3QACHBvc2l0aW9uc3EAfgAM47SCYHQACHRvU3RyaW5nc3EAfgAMVUFWs3QAE2dsb2JhbF9tYXhfcG9zaXRpb25zcQB+AAwKAfyqdAACIT1zcQB+AAw1D5j1dAAIZ2V0Q2xhc3NzcQB+AAzUNnNRdAAOY29weSRkZWZhdWx0JDFzcQB+AAxDRz0WdAABcnNxAH4ADJaXT3F0ABZjcmVhdGVfcmFuZG9tX3Bvc2l0aW9uc3EAfgAMN4gCNXQAAm5lc3EAfgAMBjzVMXQACHZlbG9jaXR5c3EAfgAM+LNDe3QACW1pbl9saW1pdHNxAH4ADOMwR7J0AAJlcXNxAH4ADAFxMFJ0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAzUuJHidAACIyNzcQB+AAxI/S5sdAAIZmluYWxpemVzcQB+AAy6h4IWdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAyvPRh+dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgCDeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAJYTIuSW5zZWN0dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamV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
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Main.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwil/8pQAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAec3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwsjJhsXQABm5vdGlmeXNxAH4ADFYX4+50AA9nZXRIb3N0U2VydmljZXNzcQB+AAwxIZm7dAAEd2FpdHNxAH4ADJ7AqG90AA0kYXNJbnN0YW5jZU9mc3EAfgAMvgIJGXQADHJlbGVhc2VTd2FybXNxAH4ADCeB/a90AAZlcXVhbHNzcQB+AAzQZbhNdAAMYXNJbnN0YW5jZU9mc3EAfgAMh5rwgHQADHN5bmNocm9uaXplZHNxAH4ADCd0/sl0AA0kaXNJbnN0YW5jZU9mc3EAfgAM60Tj5HQAD25vdGlmeVByZWxvYWRlcnNxAH4ADP2BhTB0AARzdG9wc3EAfgAMwDUv4HQACW5vdGlmeUFsbHNxAH4ADJEChMh0AAxpc0luc3RhbmNlT2ZzcQB+AAz9GkM9dAAGPGluaXQ+c3EAfgAMnxfO/HQADXNpemVfb2Zfc3dhcm1zcQB+AAwU15TQdAACPT1zcQB+AAzvVkw6dAAFY2xvbmVzcQB+AAzcetDcdAAETWFpbnNxAH4ADO+p6RB0AAh0b1N0cmluZ3NxAH4ADPsDHwB0AAIhPXNxAH4ADLF5+v50AA1nZXRQYXJhbWV0ZXJzc3EAfgAM0KA0uXQACGdldENsYXNzc3EAfgAMSC4jJnQACml0ZXJhdGlvbnNzcQB+AAwr6xKDdAAFc3RhcnRzcQB+AAyxfI3tdAACbmVzcQB+AAzV+NVedAAEaW5pdHNxAH4ADAlpCsl0AAJlcXNxAH4ADJjAu5F0AAIjI3NxAH4ADPY7JRJ0AAhmaW5hbGl6ZXNxAH4ADOMTrLx0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AFN4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AAdhMi5NYWludXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AGtzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AU0wACWluaGVyaXRlZHEAfgBTTAAHcGFyZW50c3EAfgBTeHEAfgBwc3EAfgBrdXEAfgBOAAAAAHNxAH4Aa3VxAH4ATgAAAABzcQB+AGt1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAA3NyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AG90AAtBcHBsaWNhdGlvbnNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Ab3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAGamF2YWZ4c3EAfgCIdAALYXBwbGljYXRpb25zcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AiXNxAH4AfHQABk9iamVjdHNxAH4AgHNxAH4Ag3VxAH4AhgAAAANzcQB+AIh0AARqYXZhc3EAfgCIdAAEbGFuZ3EAfgCPc3EAfgB8dAADQW55c3EAfgCAc3EAfgCDdXEAfgCGAAAAAnNxAH4AiHQABXNjYWxhcQB+AI91cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAJhMnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2Nj3JR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABDL2hvbWUvamV2YS9Ecm9wYm94L1BhcmFkaWdtcy9Bc3NpZ25tZW50XzIvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFKzAE0XD6n/jBNHnTnvDIUuEE54x
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwisy+nwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAfc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwsB6K4HQABm5vdGlmeXNxAH4ADFYX4+50AA9nZXRIb3N0U2VydmljZXNzcQB+AAwhXXXtdAAEd2FpdHNxAH4ADP1Mvp90AA0kYXNJbnN0YW5jZU9mc3EAfgAMvgIJGXQADHJlbGVhc2VTd2FybXNxAH4ADGQ6+dF0AAZlcXVhbHNzcQB+AAxvLJjLdAAMYXNJbnN0YW5jZU9mc3EAfgAMPUkn4XQADHN5bmNocm9uaXplZHNxAH4ADLnsiRx0AA0kaXNJbnN0YW5jZU9mc3EAfgAM60Tj5HQAD25vdGlmeVByZWxvYWRlcnNxAH4ADLomtsd0AARtYWluc3EAfgAM/YGFMHQABHN0b3BzcQB+AAxXUFEXdAAJbm90aWZ5QWxsc3EAfgAMDUGMyXQADGlzSW5zdGFuY2VPZnNxAH4ADP0aQz10AAY8aW5pdD5zcQB+AAyfF878dAANc2l6ZV9vZl9zd2FybXNxAH4ADICV9Ul0AAI9PXNxAH4ADBaNgBJ0AAVjbG9uZXNxAH4ADIJohbJ0AARNYWluc3EAfgAM+ApV2nQACHRvU3RyaW5nc3EAfgAM7SX3L3QAAiE9c3EAfgAMsXn6/nQADWdldFBhcmFtZXRlcnNzcQB+AAxqEUJ6dAAIZ2V0Q2xhc3NzcQB+AAxILiMmdAAKaXRlcmF0aW9uc3NxAH4ADCvrEoN0AAVzdGFydHNxAH4ADFkkt8t0AAJuZXNxAH4ADNX41V50AARpbml0c3EAfgAMWfUXDnQAAmVxc3EAfgAMqrypn3QAAiMjc3EAfgAMRTZhOnQACGZpbmFsaXplc3EAfgAMfVIAzXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAnNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AVXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzl+dh3BMme7MCAAFCAAVmbGFnc3hwAHQAB2EyLk1haW51cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AbXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBVTAAJaW5oZXJpdGVkcQB+AFVMAAdwYXJlbnRzcQB+AFV4cQB+AHJzcQB+AG11cQB+AFAAAAAAc3EAfgBtdXEAfgBQAAAAAHNxAH4AbXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAADc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AcXQAC0FwcGxpY2F0aW9uc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBxc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJg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
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwqni55wAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAuc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwmneX7nQABXN3YXJtc3EAfgAMw2mBeXQABm5vdGlmeXNxAH4ADAn0y7t0AAd1bmFwcGx5c3EAfgAMmq92vnQABHdhaXRzcQB+AAyJqRZTdAAOY29weSRkZWZhdWx0JDJzcQB+AAxsy/HRdAANJGFzSW5zdGFuY2VPZnNxAH4ADMPPbrB0ABZjcmVhdGVfcmFuZG9tX3ZlbG9jaXR5c3EAfgAMoP/sonQACnN3YXJtX3NpemVzcQB+AAxstWXxdAAMcHJvZHVjdEFyaXR5c3EAfgAMVwfBzXQABmVxdWFsc3NxAH4ADDm4UYN0AA5wbG90X3BhcnRpY2xlc3NxAH4ADP2KZyp0AAxhc0luc3RhbmNlT2ZzcQB+AAxMVrAmdAADcnVuc3EAfgAMhOvJZ3QADHN5bmNocm9uaXplZHNxAH4ADK+V+ul0AA0kaXNJbnN0YW5jZU9mc3EAfgAMv8SiOnQADHVwZGF0ZV9zd2FybXNxAH4ADCUl2OZ0AAxjcmVhdGVfc3dhcm1zcQB+AAxgOC91dAAIY2FuRXF1YWxzcQB+AAwmpweDdAANcHJvZHVjdFByZWZpeHNxAH4ADDxAMzF0AA1jcmVhdGVfaW5zZWN0c3EAfgAMe1NManQACW5vdGlmeUFsbHNxAH4ADG3ZjeF0AAxpc0luc3RhbmNlT2ZzcQB+AAyykGtWdAAVdXBkYXRlX2hpZ2hlc3RfcmVjb3Jkc3EAfgAMsSntgXQABjxpbml0PnNxAH4ADDr/eZV0AAVhcHBseXNxAH4ADG8RLUF0AAI9PXNxAH4ADCHN1YN0AAVjbG9uZXNxAH4ADKDyjJR0AAYkaW5pdCRzcQB+AAyRl4UvdAAEY29weXNxAH4ADB+2ZX90AAh0b1N0cmluZ3NxAH4ADLBPtIV0AAIhPXNxAH4ADGd+SIx0AA1nZXRfdGVsZW1ldHJ5c3EAfgAMg/SYJ3QACGdldENsYXNzc3EAfgAMecBaEXQACml0ZXJhdGlvbnNzcQB+AAyTyWiadAAOY29weSRkZWZhdWx0JDFzcQB+AAzdLVpEdAAWY3JlYXRlX3JhbmRvbV9wb3NpdGlvbnNxAH4ADFtW7e10AAlTaW11bGF0b3JzcQB+AAzcY5bldAACbmVzcQB+AAyZnXyndAAOcmVwb3J0X3Jlc3VsdHNzcQB+AAyZr6judAACZXFzcQB+AAxA7ITCdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAM1+LYPHQAAiMjc3EAfgAMB3CX/nQAEnRvcF9wb3NpdGlvbnNfc2VlbnNxAH4ADMfpn5N0AAhmaW5hbGl6ZXNxAH4ADJYPELd0AA5wcm9kdWN0RWxlbWVudHNxAH4ADIQJQdd0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AHN4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0AAxhMi5TaW11bGF0b3J1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4Ai3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBzTAAJaW5oZXJpdGVkcQB+AHNMAAdwYXJlbnRzcQB+AHN4cQB+AJBzcQB+AIt1cQB+AG4AAAAAc3EAfgCLdXEAfgBuAAAAAHNxAH4Ai3VyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAGc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Aj3QADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Aj3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AqXNxAH4AnHEAfgCfc3EAfgCgc3EAfgCjdXEAfgCmAAAAA3NxAH4AqHQABGphdmFzcQB+AKh0AAJpb3EAfgCtc3EAfgCcdAAHUHJvZHVjdHEAfgCic3EAfgCcdAAGRXF1YWxzcQB+AKJzcQB+AJx0AAZPYmplY3RzcQB+AKBzcQB+AKN1cQB+AKYAAAADc3EAfgCocQB+ALNzcQB+AKh0AARsYW5ncQB+AK1zcQB+AJx0AANBbnlxAH4AonNxAH4AcHEAfgB9dXEAfgB+AAAAAHNxAH4AgAB0AAxhMi5TaW11bGF0b3J1cQB+AIMAAAAAfnEAfgCFdAAGTW9kdWxldXEAfgCJAAAAAHNxAH4Ai3EAfgCRc3EAfgCLc3EAfgCTc3EAfgCLdXEAfgBuAAAAAHNxAH4Ai3VxAH4AbgAAAABzcQB+AIt1cQB+AJoAAAAEc3EAfgCccQB+AJ9zcQB+AKBzcQB+AKN1cQB+AKYAAAACc3EAfgCocQB+AKtxAH4ArXNxAH4AnHEAfgCfc3EAfgCgc3EAfgCjdXEAfgCmAAAAA3NxAH4AqHEAfgCzc3EAfgCodAACaW9xAH4ArXNxAH4AnHEAfgC7c3EAfgCgc3EAfgCjdXEAfgCmAAAAA3NxAH4AqHEAfgCzc3EAfgCocQB+AMFxAH4ArXNxAH4AnHEAfgDDcQB+ANZ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAJhMnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2Noh7p1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABDL2hvbWUvamV2YS9Ecm9wYm94L1BhcmFkaWdtcy9Bc3NpZ25tZW50XzIvdGFyZ2V0L3NjYWxhLTIuMTIvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFH3v8h01mk8S2BELAjHreI6RQu+4
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwR7aefgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAAAvc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwmneX7nQABXN3YXJtc3EAfgAMw2mBeXQABm5vdGlmeXNxAH4ADAn0y7t0AAd1bmFwcGx5c3EAfgAMmq92vnQABHdhaXRzcQB+AAy+oR0ldAAPdmVyYm9zZV9sb2dnaW5nc3EAfgAMiakWU3QADmNvcHkkZGVmYXVsdCQyc3EAfgAMbMvx0XQADSRhc0luc3RhbmNlT2ZzcQB+AAyg/+yidAAKc3dhcm1fc2l6ZXNxAH4ADGy1ZfF0AAxwcm9kdWN0QXJpdHlzcQB+AAxXB8HNdAAGZXF1YWxzc3EAfgAMObhRg3QADnBsb3RfcGFydGljbGVzc3EAfgAM/YpnKnQADGFzSW5zdGFuY2VPZnNxAH4ADBrT7cd0AAtsb2dfZXZlcnlfbnNxAH4ADExWsCZ0AANydW5zcQB+AAyE68lndAAMc3luY2hyb25pemVkc3EAfgAMr5X66XQADSRpc0luc3RhbmNlT2ZzcQB+AAy/xKI6dAAMdXBkYXRlX3N3YXJtc3EAfgAMJSXY5nQADGNyZWF0ZV9zd2FybXNxAH4ADGA4L3V0AAhjYW5FcXVhbHNxAH4ADCanB4N0AA1wcm9kdWN0UHJlZml4c3EAfgAMPEAzMXQADWNyZWF0ZV9pbnNlY3RzcQB+AAx7U0xqdAAJbm90aWZ5QWxsc3EAfgAMbdmN4XQADGlzSW5zdGFuY2VPZnNxAH4ADPlVYGp0AAx0cmFja19pbnNlY3RzcQB+AAyykGtWdAAVdXBkYXRlX2hpZ2hlc3RfcmVjb3Jkc3EAfgAMsSntgXQABjxpbml0PnNxAH4ADDr/eZV0AAVhcHBseXNxAH4ADG8RLUF0AAI9PXNxAH4ADCHN1YN0AAVjbG9uZXNxAH4ADKDyjJR0AAYkaW5pdCRzcQB+AAyRl4UvdAAEY29weXNxAH4ADB+2ZX90AAh0b1N0cmluZ3NxAH4ADLBPtIV0AAIhPXNxAH4ADGd+SIx0AA1nZXRfdGVsZW1ldHJ5c3EAfgAMg/SYJ3QACGdldENsYXNzc3EAfgAMecBaEXQACml0ZXJhdGlvbnNzcQB+AAyTyWiadAAOY29weSRkZWZhdWx0JDFzcQB+AAxbVu3tdAAJU2ltdWxhdG9yc3EAfgAM3GOW5XQAAm5lc3EAfgAMmZ18p3QADnJlcG9ydF9yZXN1bHRzc3EAfgAMma+o7nQAAmVxc3EAfgAMQOyEwnQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADNfi2Dx0AAIjI3NxAH4ADAdwl/50ABJ0b3BfcG9zaXRpb25zX3NlZW5zcQB+AAzH6Z+TdAAIZmluYWxpemVzcQB+AAyWDxC3dAAOcHJvZHVjdEVsZW1lbnRzcQB+AAyECUHXdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgB1eHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAMYTIuU2ltdWxhdG9ydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AI1zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AdUwACWluaGVyaXRlZHEAfgB1TAAHcGFyZW50c3EAfgB1eHEAfgCSc3EAfgCNdXEAfgBwAAAAAHNxAH4AjXVxAH4AcAAAAABzcQB+AI11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AJF0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AJFzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AKtzcQB+AJ5xAH4AoXNxAH4AonNxAH4ApXVxAH4AqAAAAANzcQB+AKp0AARqYXZhc3EAfgCqdAACaW9xAH4Ar3NxAH4AnnQAB1Byb2R1Y3RxAH4ApHNxAH4AnnQABkVxdWFsc3EAfgCkc3EAfgCedAAGT2JqZWN0c3EAfgCic3EAfgCldXEAfgCoAAAAA3NxAH4AqnEAfgC1c3EAfgCqdAAEbGFuZ3EAfgCvc3EAfgCedAADQW55cQB+AKRzcQB+AHJxAH4Af3VxAH4AgAAAAABzcQB+AIIAdAAMYTIuU2ltdWxhdG9ydXEAfgCFAAAAAH5xAH4Ah3QABk1vZHVsZXVxAH4AiwAAAABzcQB+AI1xAH4Ak3NxAH4AjXNxAH4AlXNxAH4AjXVxAH4AcAAAAABzcQB+AI11cQB+AHAAAAAAc3EAfgCNdXEAfgCcAAAABHNxAH4AnnEAfgChc3EAfgCic3EAfgCldXEAfgCoAAAAAnNxAH4AqnEAfgCtcQB+AK9zcQB+AJ5xAH4AoXNxAH4AonNxAH4ApXVxAH4AqAAAAANzcQB+AKpxAH4AtXNxAH4AqnQAAmlvcQB+AK9zcQB+AJ5xAH4AvXNxAH4AonNxAH4ApXVxAH4AqAAAAANzcQB+AKpxAH4AtXNxAH4AqnEAfgDDcQB+AK9zcQB+AJ5xAH4AxXEAfgDYdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAACYTJzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVtxqDgGdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRXe1dvs9gTmHaKiDXwBgqP4tYilQ==
 external apis:
 0 items
 source infos:
@@ -509,7 +668,7 @@ AAAAAAAAAAA=
 /home/jeva/Dropbox/Paradigms/Assignment_2/src/main/scala/a2/Simulator.scala -> 
 AAAAAAAAAAA=
 compilations:
-51 items
+56 items
 00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWyTSkxx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWyjy65t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWyl5WK11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
@@ -561,3 +720,8 @@ compilations:
 48 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2Niy5l1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 49 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2Nj3JR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
 50 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW2Noh7p1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+51 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW3GkIL91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+52 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW3Gmiwp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+53 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW3GmsgB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+54 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW3GoErd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
+55 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW3GoOAZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9ob21lL2pldmEvRHJvcGJveC9QYXJhZGlnbXMvQXNzaWdubWVudF8yL3RhcmdldC9zY2FsYS0yLjEyL2NsYXNzZXN0AAEv
