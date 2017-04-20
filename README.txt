@@ -1,8 +1,21 @@
-Assignment 2: 
+Assignment 2:
 
-GOAL: 
+GOAL:
 
 Find the highest peak on a 2d surface with each (x,y) on the cartesian plane having a height (H).
+
+CODE EXPLANATION:
+
+Main
+  Includes controls the size of swarm and number of iterations.
+  Contains functionality for GUI
+
+Insect
+  Includes functions necessary to create and update insect objects
+
+Simulator
+  Includes functions for updating multiple insects (a swarm) and providing telemetry
+  on that swarm.
 
 METHOD:
 
@@ -46,64 +59,15 @@ Please note, you will be given a little JavaFX UI code to draw the squares. You 
 
 
 
-PROVIDED BY ASSESSOR: 
+PROVIDED BY ASSESSOR:
 
 Method for height: def height(x:Double, y:Double):Double = sin(10πx)sin(10πy)−10((x−0.5)^2 +(y−0.5)^2)
 
 GUI
 
-Equations: 
+Equations:
 	- x and y represent the particle's current position;
 	- vx and vy represent the x and y components of the particle's velocity
 	- r1 , r2 , r3 , etc represent random numbers between 0 and 1
 	- lx and ly represent the location of the highest point seen by this particle (l for local)
 	- gx and gy represent the location of the highest point seen by the entire system (g for global)
-
-
-
-
-CLASSES
-	- particle
-	    Attributes:
-	        - local_max = highest point seen by this particle
-	        - current_position
-	        - current_velocity
-
-	    Methods:
-	        Public
-	        - constructor
-	        - tick-tock: updates position, velocity and height
-	        Private
-	        - update_velocity
-	        - update_position
-	        - get_height
-
-	- simulator - needs configurable number of particles
-	    Attributes:
-	        - global_max = highest position seen by any particle
-	        - top_5 = highest five positions seen so far
-	        - swarm = list of insects in environment
-
-	    Methods:
-
-	        Public
-	        - run: creates swarm, runs required iterations, reports results, plots particles;
-
-	        Private
-	        - create_particle
-	        - update_particles: updates the position of each particle using particle's tick-tock            method which return a new particle that is updated.
-	        - report_results: prints to console highest position and top five
-	        - plot_particles: drives Java FX
-	- terrain
-	- main()
-
-
-Clarifications required:
-    What happens when a particle reaches the edge of the terrain?
-    What is the size of the terrain - is this variable?
-
-    
-          
-
-
-

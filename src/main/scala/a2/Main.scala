@@ -18,7 +18,9 @@ class Main extends Application {
 
 
   // -------  CONTROLS --------
-  val size_of_swarm: Int = 10
+  val size_of_swarm: Int = 100
+  //NOTE: only 60fps are calculated: the time required for this simulation will be (iterations/60) seconds.
+  val iterations: Int = 100
 
 
   override def start(primaryStage:Stage) = {
@@ -38,14 +40,12 @@ class Main extends Application {
     val InsectAxis = new CategoryAxis()
     InsectAxis.setAnimated(false)
     InsectAxis.setTickLabelsVisible(false)
-    //InsectAxis.setAutoRanging(true)
+    InsectAxis.setAutoRanging(false)
     InsectAxis.setLabel("Insect Number")
 
-
     // An axis for the height
-    val heightAxis = new NumberAxis(-2, 2, 0.1)
-    heightAxis.setAnimated(true)
-    //heightAxis.setAutoRanging(true)
+    val heightAxis = new NumberAxis(-2.0, 2.0, 0.1)
+    heightAxis.setAnimated(false)
     heightAxis.setLabel("Height")
 
 
@@ -68,9 +68,9 @@ class Main extends Application {
     /*
      * Initialise the chart with values. We have to add them to the series
      */
-    for ( (insect, index) <- searchSwarm.swarm.zipWithIndex)
+    for ( (insect, i) <- searchSwarm.swarm.zipWithIndex)
     {
-      heightSeries.getData.add(new XYChart.Data(index.toString, insect.height))
+      heightSeries.getData.add(new XYChart.Data(i.toString, insect.height))
     }
 
     /*
@@ -104,20 +104,13 @@ class Main extends Application {
      */
     new AnimationTimer() {
 
-      // This keeps track of the timestamp of the previous frame
-      var last:Long = 0
+      // This keeps track of how many iterations have been completed.
+      var iter_counter: Int = 0
 
       /**
         * Called every time JavaFX wants to render another frame.
         */
       override def handle(now: Long): Unit = {
-
-        /*
-         * AnimationTimer receives the time in nanoseconds. This means we need to be careful about division -- if we
-         * divide by 1 billion using a Long, we will get zero. We need to make sure our division uses a Double.
-         */
-        val time = if (last > 0) (now - last) / 1000000000.0 else 1
-        last = now
 
         // Update the game state
         Simulator.run(searchSwarm)
@@ -129,13 +122,18 @@ class Main extends Application {
         // Update the data series
         // JavaFX charts use "ObservableLists".
         // getData gets the list, and then because JavaFX works using mutable data, we can update the datapoint
-        for {
-          (insect, i) <- searchSwarm.swarm.zipWithIndex
-        } {
+        for ((insect, i) <- searchSwarm.swarm.zipWithIndex)
+        {
           heightSeries.getData.get(i).setYValue(insect.height)
         }
 
-        //Thread.sleep(100)
+        //Thread.sleep(1000)
+        iter_counter += 1
+        if (iter_counter == iterations) {
+          this.stop()
+          primaryStage.close()
+          println("Simulation completed " + iterations + " iterations using " + size_of_swarm +".\n The highest position found was " + Insect.global_max_value)
+        }
 
       }
     }.start()
@@ -147,14 +145,27 @@ class Main extends Application {
    */
   def releaseSwarm(state:Simulator, c:Canvas):Unit = {
 
-    import Insect._
-
     // Get the "graphics context" that holds the drawing commands
     val g2d = c.getGraphicsContext2D
 
     // Blank the canvas
-    g2d.setFill(Color.BLACK)
+    g2d.setFill(Color.WHEAT)
     g2d.fillRect(0, 0, c.getWidth, c.getHeight)
+    /*
+    for (x <- 1 to c.getWidth.toInt;
+         y <- 1 to c.getHeight.toInt)
+      {
+        val pixx: Int = x
+        val pixy: Int = y
+        val height = Insect.height(x,y)
+        val color = List(Color.YELLOW, Color.BLUE, Color.WHITE, Color.BLACK)
+        g2d.setFill(color(scala.util.Random.nextInt(color.length)))
+        g2d.fillRect(pixx-1, pixy-1, x, y)
+      }
+    */
+
+
+
 
     // Render the items
     for (gameItem <- state.swarm)
@@ -163,16 +174,16 @@ class Main extends Application {
         case Insect(position, velocity, id) =>
           // Note that we have to set the fill colour before we fill
           val size: Int = 10
-          g2d.setFill(Color.YELLOW)
+          g2d.setFill(Color.BLACK)
+          //tranlate for canvas
           val (x, y) = position
-          //g2d.fillOval(x*(c.getHeight/Insect.max_limit), y*(c.getHeight/Insect.max_limit), size, size)
+
           g2d.fillOval(x, y, size, size)
       }
 
     }
     //mark highest position seen
     g2d.setFill(Color.RED)
-    //g2d.fillOval(Insect.global_max_position._1*(c.getHeight/Insect.max_limit), Insect.global_max_position._2*(c.getHeight/Insect.max_limit), 10, 10)
     g2d.fillOval(Insect.global_max_position._1, Insect.global_max_position._2, 10, 10)
 
   }
@@ -185,4 +196,3 @@ object  Main {
     Application.launch(classOf[Main], args: _*)
   }
 }
-

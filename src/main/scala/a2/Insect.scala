@@ -11,18 +11,18 @@ import scala.collection.mutable.ArrayBuffer
   *
   * 	- Insect
   * Attributes:
-  *- local_max = highest point seen by this particle
+  *- local_max_height = highest point seen by this particle
+   - local_max_position = location of highest point seen
   *- current_position
   *- current_velocity
   **
   *Methods:
-  *Public
   *- tick: updates position, velocity and height
-  *
-  *Private
   *- update_velocity
   *- update_position
   *- get_height
+  *- spawn - create new insects
+   - create_random_position and create_random_velocity - helpers for spawn
   */
 
 
@@ -46,7 +46,7 @@ object Insect {
 
   //position limits for terrain
   val min_limit: Int = 0
-  val max_limit: Double = 500
+  val max_limit: Int = 500
 
   //********* CREATE NEW INSECTS *************
   def spawn(): Insect = {
@@ -108,7 +108,7 @@ object Insect {
       else if (velocity > max)
         {max}
       else velocity
-  }
+    }
 
     //calculates current height for use in formulas
     val x: Double = speed_check((0.5 * insect.velocity._1)+(2*r.nextFloat()*(insect.local_max_position._1 -  insect.position._1))+(2*r.nextFloat()*(global_max_position._1 - insect.position._1)))
@@ -133,4 +133,3 @@ object Insect {
   //math.cos(x) + math.sin(y)
 
 }
-
