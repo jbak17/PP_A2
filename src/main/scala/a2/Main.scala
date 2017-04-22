@@ -18,9 +18,9 @@ class Main extends Application {
 
 
   // -------  CONTROLS --------
-  val size_of_swarm: Int = 100
+  val size_of_swarm: Int = 500
   //NOTE: only 60fps are calculated: the time required for this simulation will be (iterations/60) seconds.
-  val iterations: Int = 100
+  val iterations: Int = 7200
 
 
   override def start(primaryStage:Stage) = {
@@ -51,6 +51,7 @@ class Main extends Application {
 
     val HeightChart = new BarChart(InsectAxis, heightAxis)
     HeightChart.setLegendVisible(true)
+    HeightChart.setAnimated(true)
     HeightChart.setTitle("Insect heights")
     HeightChart.setVerticalGridLinesVisible(false)
     HeightChart.setHorizontalGridLinesVisible(false)
@@ -58,6 +59,7 @@ class Main extends Application {
 
     // These series hold the actual data points. Note that it is "Number" because it's a NumberAxis
     val heightSeries = new Series[String, Number]()
+    heightSeries.setName("Insects")
 
     /**
       * The game state. This is just about the only var in the program!
@@ -68,9 +70,9 @@ class Main extends Application {
     /*
      * Initialise the chart with values. We have to add them to the series
      */
-    for ( (insect, i) <- searchSwarm.swarm.zipWithIndex)
+    for ( insect <- searchSwarm.swarm)
     {
-      heightSeries.getData.add(new XYChart.Data(i.toString, insect.height))
+      heightSeries.getData.add(new XYChart.Data(insect.insect_ID.toString, insect.height))
     }
 
     /*
@@ -122,12 +124,12 @@ class Main extends Application {
         // Update the data series
         // JavaFX charts use "ObservableLists".
         // getData gets the list, and then because JavaFX works using mutable data, we can update the datapoint
-        for ((insect, i) <- searchSwarm.swarm.zipWithIndex)
+        for (insect <- searchSwarm.swarm)
         {
-          heightSeries.getData.get(i).setYValue(insect.height)
+          heightSeries.getData.get(insect.insect_ID -1 ).setYValue(insect.height)
         }
 
-        //Thread.sleep(1000)
+        //end simulation after requested number of simulations
         iter_counter += 1
         if (iter_counter == iterations) {
           this.stop()
@@ -151,21 +153,6 @@ class Main extends Application {
     // Blank the canvas
     g2d.setFill(Color.WHEAT)
     g2d.fillRect(0, 0, c.getWidth, c.getHeight)
-    /*
-    for (x <- 1 to c.getWidth.toInt;
-         y <- 1 to c.getHeight.toInt)
-      {
-        val pixx: Int = x
-        val pixy: Int = y
-        val height = Insect.height(x,y)
-        val color = List(Color.YELLOW, Color.BLUE, Color.WHITE, Color.BLACK)
-        g2d.setFill(color(scala.util.Random.nextInt(color.length)))
-        g2d.fillRect(pixx-1, pixy-1, x, y)
-      }
-    */
-
-
-
 
     // Render the items
     for (gameItem <- state.swarm)

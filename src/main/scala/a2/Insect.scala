@@ -30,7 +30,8 @@ case class Insect(position: Position, velocity: Velocity, id:Int) {
   val insect_ID: Int = id
   var local_max_position: Position = position
   var local_max_height: Double = Insect.update_height(this)
-  var height: Double = Insect.height(position._1, position._2)
+  var height: Double = Insect.height(position._1, position._2) //keep height in variable as
+  //it is used several times per iteration.
 
 }
 

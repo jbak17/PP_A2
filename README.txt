@@ -4,6 +4,14 @@ GOAL:
 
 Find the highest peak on a 2d surface with each (x,y) on the cartesian plane having a height (H).
 
+APPROACH:
+The program is run through the file Main.scala, which includes all of the code to run the GUI. The swarm is implemented as a mutable sequence of 'Insect' objects. The size of the swarm and the duration which they search can be adjusted in the Main.scala file. Insects keep track of the highest position and height that they have seen to date, and have all of the functionality necessary for their operation. Insects are defined in Insect.scala. All of the necessary code to manipulate a collection of Insects is included in the Simulator.scala file. This includes output information to the console, updating positions, etc. 
+
+The code was developed on my local machine running Ubuntu 16.04, Scala 2.12.1. The code is also available from github (https://github.com/jbak17/PP_A2)
+
+The most challenging part of the project was the GUI, and I remain unable to get the JavaFx chart to work correctly. 
+
+
 CODE EXPLANATION:
 
 Main
